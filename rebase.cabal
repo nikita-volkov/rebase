@@ -1,0 +1,103 @@
+name:
+  rebase
+version:
+  0.1
+synopsis:
+  A more progressive alternative to the "base" package
+description:
+  This package is intended for those who are tired of keeping
+  long lists of dependencies to the same essential libraries in each package
+  as well as the endless imports of the same APIs all over again.
+  It also supports the modern tendencies in the language.
+  .
+  To solve those problems this package does the following:
+  .
+  * Reexport the original APIs under the \"Rebase\" namespace.
+  .
+  * Export all the possible non-conflicting symbols from the \"Rebase.Prelude\" module.
+  .
+  * Give priority to the modern practices in the conflicting cases.
+  .
+  The policy behind the package is only to reexport the non-ambiguous
+  and non-controversial APIs, which the community has obviously settled on.
+  The package is intended to rapidly evolve with the contribution from the community,
+  with the missing features being added with pull-requests.
+homepage:
+  https://github.com/nikita-volkov/rebase 
+bug-reports:
+  https://github.com/nikita-volkov/rebase/issues 
+author:
+  Nikita Volkov <nikita.y.volkov@mail.ru>
+maintainer:
+  Nikita Volkov <nikita.y.volkov@mail.ru>
+copyright:
+  (c) 2016, Nikita Volkov
+license:
+  MIT
+license-file:
+  LICENSE
+build-type:
+  Simple
+cabal-version:
+  >=1.10
+
+
+source-repository head
+  type:
+    git
+  location:
+    git://github.com/nikita-volkov/rebase.git
+
+
+library
+  hs-source-dirs:
+    library
+  default-extensions:
+    NoImplicitPrelude
+  default-language:
+    Haskell2010
+  other-modules:
+  exposed-modules:
+    Rebase.Prelude
+    -- vector:
+    Rebase.Data.Vector
+    -- bytestring:
+    Rebase.Data.ByteString
+    Rebase.Data.ByteString.Lazy
+    -- text:
+    Rebase.Data.Text
+    Rebase.Data.Text.IO
+    Rebase.Data.Text.Lazy
+    Rebase.Data.Text.Lazy.IO
+    -- time:
+    Rebase.Data.Time
+    -- scientific:
+    Rebase.Data.Scientific
+    -- uuid:
+    Rebase.Data.UUID
+    -- bifunctors:
+    Rebase.Data.Bifunctor
+    -- profunctors:
+    Rebase.Data.Profunctor
+    Rebase.Data.Profunctor.Unsafe
+    -- contravariant:
+    Rebase.Data.Functor.Contravariant
+    Rebase.Data.Functor.Contravariant.Divisible
+    -- contravariant-extras:
+    Rebase.Contravariant.Extras
+  build-depends:
+    -- data:
+    vector >= 0.10 && < 0.12,
+    bytestring >= 0.10.4 && < 0.11,
+    text >= 1 && < 2,
+    time >= 1.4 && < 1.6,
+    scientific >= 0.3 && < 0.4,
+    uuid == 1.3.*,
+    -- control:
+    bifunctors >= 5.2 && < 6,
+    profunctors >= 5.2 && < 6,
+    contravariant >= 1.4 && < 2,
+    contravariant-extras == 0.3.*,
+    -- general:
+    base-prelude >= 0.1.21 && < 0.2,
+    base >= 4.6 && < 4.9

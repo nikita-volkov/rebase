@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  0.1
+  0.1.1
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -61,6 +61,9 @@ library
     Rebase.Prelude
     -- vector:
     Rebase.Data.Vector
+    -- unordered-containers:
+    Rebase.Data.HashMap.Strict
+    Rebase.Data.HashSet
     -- bytestring:
     Rebase.Data.ByteString
     Rebase.Data.ByteString.Lazy
@@ -88,6 +91,8 @@ library
   build-depends:
     -- data:
     vector >= 0.10 && < 0.12,
+    containers >= 0.5 && < 0.6,
+    unordered-containers >= 0.2 && < 0.3,
     bytestring >= 0.10.4 && < 0.11,
     text >= 1 && < 2,
     time >= 1.4 && < 1.6,

@@ -28,6 +28,23 @@ import Rebase.Data.Functor.Contravariant.Divisible as Exports
 -------------------------
 import Rebase.Contravariant.Extras as Exports
 
+-- vector
+-------------------------
+import Rebase.Data.Vector as Exports (Vector)
+
+-- containers
+-------------------------
+import Rebase.Data.IntMap.Strict as Exports (IntMap)
+import Rebase.Data.IntSet as Exports (IntSet)
+import Rebase.Data.Map.Strict as Exports (Map)
+import Rebase.Data.Sequence as Exports (Seq)
+import Rebase.Data.Set as Exports (Set)
+
+-- unordered-containers
+-------------------------
+import Rebase.Data.HashSet as Exports (HashSet)
+import Rebase.Data.HashMap.Strict as Exports (HashMap)
+
 -- bytestring
 -------------------------
 import Rebase.Data.ByteString as Exports (ByteString)
@@ -35,10 +52,6 @@ import Rebase.Data.ByteString as Exports (ByteString)
 -- text
 -------------------------
 import Rebase.Data.Text as Exports (Text)
-
--- vector
--------------------------
-import Rebase.Data.Vector as Exports (Vector)
 
 -- scientific
 -------------------------

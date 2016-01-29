@@ -28,9 +28,9 @@ import Rebase.Data.Functor.Contravariant.Divisible as Exports
 -------------------------
 import Rebase.Contravariant.Extras as Exports
 
--- vector
+-- hashable
 -------------------------
-import Rebase.Data.Vector as Exports (Vector)
+import Rebase.Data.Hashable as Exports
 
 -- containers
 -------------------------
@@ -44,6 +44,10 @@ import Rebase.Data.Set as Exports (Set)
 -------------------------
 import Rebase.Data.HashSet as Exports (HashSet)
 import Rebase.Data.HashMap.Strict as Exports (HashMap)
+
+-- vector
+-------------------------
+import Rebase.Data.Vector as Exports (Vector)
 
 -- bytestring
 -------------------------

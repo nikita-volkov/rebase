@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  0.1.2
+  0.1.3
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -59,11 +59,19 @@ library
   other-modules:
   exposed-modules:
     Rebase.Prelude
-    -- vector:
-    Rebase.Data.Vector
+    -- hashable:
+    Rebase.Data.Hashable
+    -- containers:
+    Rebase.Data.IntMap.Strict
+    Rebase.Data.IntSet
+    Rebase.Data.Map.Strict
+    Rebase.Data.Sequence
+    Rebase.Data.Set
     -- unordered-containers:
     Rebase.Data.HashMap.Strict
     Rebase.Data.HashSet
+    -- vector:
+    Rebase.Data.Vector
     -- bytestring:
     Rebase.Data.ByteString
     Rebase.Data.ByteString.Lazy
@@ -90,6 +98,7 @@ library
     Rebase.Contravariant.Extras
   build-depends:
     -- data:
+    hashable >= 1.2 && < 2,
     vector >= 0.10 && < 0.12,
     containers >= 0.5 && < 0.6,
     unordered-containers >= 0.2 && < 0.3,

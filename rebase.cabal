@@ -96,6 +96,8 @@ library
     Rebase.Data.Functor.Contravariant.Divisible
     -- contravariant-extras:
     Rebase.Contravariant.Extras
+    -- deepseq:
+    Rebase.Control.DeepSeq
   build-depends:
     -- data:
     hashable >= 1.2 && < 2,
@@ -112,6 +114,7 @@ library
     profunctors >= 5.2 && < 6,
     contravariant >= 1.4 && < 2,
     contravariant-extras == 0.3.*,
+    deepseq >= 1.4 && < 2,
     -- general:
     base-prelude >= 0.1.21 && < 0.2,
     base >= 4.6 && < 5

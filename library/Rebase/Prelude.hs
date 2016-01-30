@@ -28,6 +28,10 @@ import Rebase.Data.Functor.Contravariant.Divisible as Exports
 -------------------------
 import Rebase.Contravariant.Extras as Exports
 
+-- deepseq
+-------------------------
+import Rebase.Control.DeepSeq as Exports
+
 -- hashable
 -------------------------
 import Rebase.Data.Hashable as Exports

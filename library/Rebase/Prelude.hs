@@ -13,7 +13,7 @@ where
 
 -- base-prelude
 -------------------------
-import BasePrelude as Exports hiding (fail)
+import BasePrelude as Exports hiding (fail, Last(..), First(..), (<>))
 
 -- profunctors
 -------------------------
@@ -27,6 +27,11 @@ import Rebase.Data.Functor.Contravariant.Divisible as Exports
 -- contravariant-extras
 -------------------------
 import Rebase.Contravariant.Extras as Exports
+
+-- semigroups
+-------------------------
+import Rebase.Data.Semigroup as Exports
+import Rebase.Data.List.NonEmpty as Exports (NonEmpty)
 
 -- deepseq
 -------------------------

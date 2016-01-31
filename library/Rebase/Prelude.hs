@@ -69,6 +69,11 @@ import Rebase.Data.Scientific as Exports (Scientific)
 -------------------------
 import Rebase.Data.UUID as Exports (UUID)
 
+-- void
+-------------------------
+import Rebase.Data.Void as Exports
+import Rebase.Data.Void.Unsafe as Exports
+
 -- time
 -------------------------
 import Rebase.Data.Time as Exports

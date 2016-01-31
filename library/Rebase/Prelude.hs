@@ -74,6 +74,10 @@ import Rebase.Data.Scientific as Exports (Scientific)
 -------------------------
 import Rebase.Data.UUID as Exports (UUID)
 
+-- dlist
+-------------------------
+import Rebase.Data.DList as Exports (DList)
+
 -- void
 -------------------------
 import Rebase.Data.Void as Exports

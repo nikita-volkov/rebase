@@ -15,6 +15,10 @@ where
 -------------------------
 import BasePrelude as Exports hiding (Last(..), First(..), (<>))
 
+-- base
+-------------------------
+import Rebase.Data.Functor.Identity as Exports
+
 -- profunctors
 -------------------------
 import Rebase.Data.Profunctor.Unsafe as Exports
@@ -36,6 +40,17 @@ import Rebase.Data.List.NonEmpty as Exports (NonEmpty)
 -- deepseq
 -------------------------
 import Rebase.Control.DeepSeq as Exports
+
+-- transformers
+-------------------------
+import Rebase.Control.Monad.IO.Class as Exports
+import Rebase.Control.Monad.Trans.Class as Exports
+import Rebase.Control.Monad.Trans.Cont as Exports hiding (shift)
+import Rebase.Control.Monad.Trans.Except as Exports (ExceptT(ExceptT), Except, except, runExcept, runExceptT, mapExcept, mapExceptT, withExcept, withExceptT)
+import Rebase.Control.Monad.Trans.Maybe as Exports
+import Rebase.Control.Monad.Trans.Reader as Exports (Reader, runReader, mapReader, withReader, ReaderT(ReaderT), runReaderT, mapReaderT, withReaderT)
+import Rebase.Control.Monad.Trans.State.Strict as Exports (State, runState, evalState, execState, mapState, withState, StateT(StateT), runStateT, evalStateT, execStateT, mapStateT, withStateT)
+import Rebase.Control.Monad.Trans.Writer.Strict as Exports (Writer, runWriter, execWriter, mapWriter, WriterT(..), execWriterT, mapWriterT)
 
 -- hashable
 -------------------------

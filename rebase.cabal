@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  0.2.1
+  0.2.2
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -59,6 +59,8 @@ library
   other-modules:
   exposed-modules:
     Rebase.Prelude
+    -- base:
+    Rebase.Data.Functor.Identity
     -- hashable:
     Rebase.Data.Hashable
     -- containers:
@@ -106,6 +108,17 @@ library
     Rebase.Data.List.NonEmpty
     -- deepseq:
     Rebase.Control.DeepSeq
+    -- transformers:
+    Rebase.Control.Monad.IO.Class
+    Rebase.Control.Monad.Trans.Class
+    Rebase.Control.Monad.Trans.Cont
+    Rebase.Control.Monad.Trans.Except
+    Rebase.Control.Monad.Trans.Maybe
+    Rebase.Control.Monad.Trans.Reader
+    Rebase.Control.Monad.Trans.State.Lazy
+    Rebase.Control.Monad.Trans.State.Strict
+    Rebase.Control.Monad.Trans.Writer.Lazy
+    Rebase.Control.Monad.Trans.Writer.Strict
   build-depends:
     -- data:
     hashable >= 1.2 && < 2,
@@ -126,6 +139,7 @@ library
     contravariant-extras == 0.3.*,
     semigroups >= 0.18 && < 0.19,
     deepseq >= 1.4 && < 2,
+    transformers >= 0.4 && < 0.6,
     -- general:
     base-prelude >= 0.1.21 && < 0.2,
     base >= 4.6 && < 5

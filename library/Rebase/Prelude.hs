@@ -13,7 +13,7 @@ where
 
 -- base-prelude
 -------------------------
-import BasePrelude as Exports hiding (fail, Last(..), First(..), (<>))
+import BasePrelude as Exports hiding (Last(..), First(..), (<>))
 
 -- profunctors
 -------------------------

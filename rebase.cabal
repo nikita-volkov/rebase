@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  0.2.2
+  0.2.3
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -119,6 +119,10 @@ library
     Rebase.Control.Monad.Trans.State.Strict
     Rebase.Control.Monad.Trans.Writer.Lazy
     Rebase.Control.Monad.Trans.Writer.Strict
+    -- either:
+    Rebase.Control.Monad.Trans.Either
+    Rebase.Data.Either.Combinators
+    Rebase.Data.Either.Validation
   build-depends:
     -- data:
     hashable >= 1.2 && < 2,
@@ -140,6 +144,7 @@ library
     semigroups >= 0.18 && < 0.19,
     deepseq >= 1.4 && < 2,
     transformers >= 0.4 && < 0.6,
+    either >= 4.4 && < 5,
     -- general:
     base-prelude >= 0.1.21 && < 0.2,
     base >= 4.6 && < 5

@@ -52,6 +52,12 @@ import Rebase.Control.Monad.Trans.Reader as Exports (Reader, runReader, mapReade
 import Rebase.Control.Monad.Trans.State.Strict as Exports (State, runState, evalState, execState, mapState, withState, StateT(StateT), runStateT, evalStateT, execStateT, mapStateT, withStateT)
 import Rebase.Control.Monad.Trans.Writer.Strict as Exports (Writer, runWriter, execWriter, mapWriter, WriterT(..), execWriterT, mapWriterT)
 
+-- either
+-------------------------
+import Rebase.Control.Monad.Trans.Either as Exports hiding (left, right)
+import Rebase.Data.Either.Combinators as Exports hiding (isLeft, isRight)
+import Rebase.Data.Either.Validation as Exports
+
 -- hashable
 -------------------------
 import Rebase.Data.Hashable as Exports

@@ -55,7 +55,7 @@ import Rebase.Control.Monad.Trans.Writer.Strict as Exports (Writer, runWriter, e
 -- mtl
 -------------------------
 import Rebase.Control.Monad.Cont.Class as Exports
-import Rebase.Control.Monad.Error.Class as Exports
+import Rebase.Control.Monad.Error.Class as Exports hiding (Error(..))
 import Rebase.Control.Monad.Reader.Class as Exports
 import Rebase.Control.Monad.State.Class as Exports
 import Rebase.Control.Monad.Writer.Class as Exports

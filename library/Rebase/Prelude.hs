@@ -45,12 +45,20 @@ import Rebase.Control.DeepSeq as Exports
 -------------------------
 import Rebase.Control.Monad.IO.Class as Exports
 import Rebase.Control.Monad.Trans.Class as Exports
-import Rebase.Control.Monad.Trans.Cont as Exports hiding (shift)
+import Rebase.Control.Monad.Trans.Cont as Exports hiding (shift, callCC)
 import Rebase.Control.Monad.Trans.Except as Exports (ExceptT(ExceptT), Except, except, runExcept, runExceptT, mapExcept, mapExceptT, withExcept, withExceptT)
 import Rebase.Control.Monad.Trans.Maybe as Exports
 import Rebase.Control.Monad.Trans.Reader as Exports (Reader, runReader, mapReader, withReader, ReaderT(ReaderT), runReaderT, mapReaderT, withReaderT)
 import Rebase.Control.Monad.Trans.State.Strict as Exports (State, runState, evalState, execState, mapState, withState, StateT(StateT), runStateT, evalStateT, execStateT, mapStateT, withStateT)
 import Rebase.Control.Monad.Trans.Writer.Strict as Exports (Writer, runWriter, execWriter, mapWriter, WriterT(..), execWriterT, mapWriterT)
+
+-- mtl
+-------------------------
+import Rebase.Control.Monad.Cont.Class as Exports
+import Rebase.Control.Monad.Error.Class as Exports
+import Rebase.Control.Monad.Reader.Class as Exports
+import Rebase.Control.Monad.State.Class as Exports
+import Rebase.Control.Monad.Writer.Class as Exports
 
 -- either
 -------------------------

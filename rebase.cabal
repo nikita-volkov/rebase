@@ -119,6 +119,12 @@ library
     Rebase.Control.Monad.Trans.State.Strict
     Rebase.Control.Monad.Trans.Writer.Lazy
     Rebase.Control.Monad.Trans.Writer.Strict
+    -- mtl:
+    Rebase.Control.Monad.Cont.Class
+    Rebase.Control.Monad.Error.Class
+    Rebase.Control.Monad.Reader.Class
+    Rebase.Control.Monad.State.Class
+    Rebase.Control.Monad.Writer.Class
     -- either:
     Rebase.Control.Monad.Trans.Either
     Rebase.Data.Either.Combinators
@@ -144,6 +150,7 @@ library
     semigroups >= 0.18 && < 0.19,
     deepseq >= 1.4 && < 2,
     transformers >= 0.4 && < 0.6,
+    mtl >= 2.2 && < 3.0,
     either >= 4.4 && < 5,
     -- general:
     base-prelude >= 0.1.21 && < 0.2,

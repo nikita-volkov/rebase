@@ -13,11 +13,12 @@ where
 
 -- base-prelude
 -------------------------
-import BasePrelude as Exports hiding (Last(..), First(..), (<>))
+import BasePrelude as Exports hiding (Last(..), First(..), (<>), first, second)
 
 -- base
 -------------------------
 import Rebase.Data.Functor.Identity as Exports
+import Rebase.Data.Bifunctor as Exports
 
 -- profunctors
 -------------------------

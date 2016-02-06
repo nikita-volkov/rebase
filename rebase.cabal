@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  0.2.4
+  0.3
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -61,6 +61,7 @@ library
     Rebase.Prelude
     -- base:
     Rebase.Data.Functor.Identity
+    Rebase.Data.Bifunctor
     -- hashable:
     Rebase.Data.Hashable
     -- containers:
@@ -93,8 +94,6 @@ library
     -- void:
     Rebase.Data.Void
     Rebase.Data.Void.Unsafe
-    -- bifunctors:
-    Rebase.Data.Bifunctor
     -- profunctors:
     Rebase.Data.Profunctor
     Rebase.Data.Profunctor.Unsafe

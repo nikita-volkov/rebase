@@ -12,5 +12,6 @@ import Data.List.NonEmpty
 
 -- |
 -- A more meaningful name for the non-empty list.
+-- Follows the convention behind such names as 'foldr1'.
 type List1 =
   NonEmpty

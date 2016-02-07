@@ -19,6 +19,7 @@ import BasePrelude as Exports hiding (Last(..), First(..), (<>), first, second)
 -------------------------
 import Rebase.Data.Functor.Identity as Exports
 import Rebase.Data.Bifunctor as Exports
+import Rebase.Data.List as Exports (List)
 
 -- profunctors
 -------------------------

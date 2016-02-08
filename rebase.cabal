@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  0.4
+  0.4.1
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -80,7 +80,10 @@ library
     Rebase.Data.Vector
     -- bytestring:
     Rebase.Data.ByteString
+    Rebase.Data.ByteString.Char8
     Rebase.Data.ByteString.Lazy
+    Rebase.Data.ByteString.Lazy.Char8
+    Rebase.Data.ByteString.Short
     -- text:
     Rebase.Data.Text
     Rebase.Data.Text.Encoding.Error

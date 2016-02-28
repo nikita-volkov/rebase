@@ -13,7 +13,7 @@ where
 
 -- base-prelude
 -------------------------
-import BasePrelude as Exports hiding (Last(..), First(..), (<>), first, second)
+import BasePrelude as Exports hiding (Last(..), First(..), (<>), first, second, fail)
 
 -- base
 -------------------------
@@ -67,6 +67,10 @@ import Rebase.Control.Monad.Writer.Class as Exports
 import Rebase.Control.Monad.Trans.Either as Exports hiding (left, right)
 import Rebase.Data.Either.Combinators as Exports hiding (isLeft, isRight)
 import Rebase.Data.Either.Validation as Exports
+
+-- fail
+-------------------------
+import Rebase.Control.Monad.Fail as Exports
 
 -- hashable
 -------------------------

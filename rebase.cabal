@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  0.4.3
+  0.5
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -134,6 +134,8 @@ library
     Rebase.Control.Monad.Trans.Either
     Rebase.Data.Either.Combinators
     Rebase.Data.Either.Validation
+    -- fail:
+    Rebase.Control.Monad.Fail
   build-depends:
     -- data:
     hashable >= 1.2 && < 2,
@@ -157,6 +159,7 @@ library
     transformers >= 0.4 && < 0.6,
     mtl >= 2.2 && < 3.0,
     either >= 4.4 && < 5,
+    fail >= 4.9 && < 5,
     -- general:
     base-prelude >= 0.1.21 && < 2,
     base >= 4.6 && < 5

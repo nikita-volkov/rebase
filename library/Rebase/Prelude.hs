@@ -13,7 +13,7 @@ where
 
 -- base-prelude
 -------------------------
-import BasePrelude as Exports hiding (Last(..), First(..), (<>), first, second, fail, Alt)
+import BasePrelude as Exports hiding (fail, Alt)
 
 -- base
 -------------------------
@@ -36,7 +36,7 @@ import Rebase.Contravariant.Extras as Exports
 
 -- semigroups
 -------------------------
-import Rebase.Data.Semigroup as Exports
+import Rebase.Data.Semigroup as Exports hiding ((<>), Last(..), First(..))
 import Rebase.Data.List.NonEmpty as Exports (NonEmpty)
 
 -- semigroupoids

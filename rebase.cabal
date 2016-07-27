@@ -113,8 +113,17 @@ library
     Rebase.Data.Semigroup
     Rebase.Data.List.NonEmpty
     -- semigroupoids:
-    Rebase.Data.Semigroupoid
     Rebase.Data.Bifunctor.Apply
+    Rebase.Data.Functor.Alt
+    Rebase.Data.Functor.Apply
+    Rebase.Data.Functor.Bind
+    Rebase.Data.Functor.Extend
+    Rebase.Data.Functor.Plus
+    Rebase.Data.Semigroup.Bifoldable
+    Rebase.Data.Semigroup.Bitraversable
+    Rebase.Data.Semigroup.Foldable
+    Rebase.Data.Semigroup.Traversable
+    Rebase.Data.Semigroupoid
     -- deepseq:
     Rebase.Control.DeepSeq
     -- transformers:

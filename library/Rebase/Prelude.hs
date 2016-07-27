@@ -13,7 +13,7 @@ where
 
 -- base-prelude
 -------------------------
-import BasePrelude as Exports hiding (Last(..), First(..), (<>), first, second, fail)
+import BasePrelude as Exports hiding (Last(..), First(..), (<>), first, second, fail, Alt)
 
 -- base
 -------------------------
@@ -43,6 +43,16 @@ import Rebase.Data.List.NonEmpty as Exports (NonEmpty)
 -------------------------
 import Rebase.Data.Semigroupoid as Exports
 import Rebase.Data.Bifunctor.Apply as Exports
+import Rebase.Data.Functor.Alt as Exports hiding (($>), many, some)
+import Rebase.Data.Functor.Apply as Exports hiding (($>))
+import Rebase.Data.Functor.Bind as Exports hiding (join, ($>))
+import Rebase.Data.Functor.Extend as Exports
+import Rebase.Data.Functor.Plus as Exports hiding (($>), some, many)
+import Rebase.Data.Semigroup.Bifoldable as Exports
+import Rebase.Data.Semigroup.Bitraversable as Exports
+import Rebase.Data.Semigroup.Foldable as Exports
+import Rebase.Data.Semigroup.Traversable as Exports
+import Rebase.Data.Semigroupoid as Exports
 
 -- deepseq
 -------------------------

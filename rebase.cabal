@@ -114,6 +114,7 @@ library
     Rebase.Data.List.NonEmpty
     -- semigroupoids:
     Rebase.Data.Semigroupoid
+    Rebase.Data.Bifunctor.Apply
     -- deepseq:
     Rebase.Control.DeepSeq
     -- transformers:

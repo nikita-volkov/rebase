@@ -42,6 +42,7 @@ import Rebase.Data.List.NonEmpty as Exports (NonEmpty)
 -- semigroupoids
 -------------------------
 import Rebase.Data.Semigroupoid as Exports
+import Rebase.Data.Bifunctor.Apply as Exports
 
 -- deepseq
 -------------------------

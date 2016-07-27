@@ -39,6 +39,10 @@ import Rebase.Contravariant.Extras as Exports
 import Rebase.Data.Semigroup as Exports
 import Rebase.Data.List.NonEmpty as Exports (NonEmpty)
 
+-- semigroupoids
+-------------------------
+import Rebase.Data.Semigroupoid as Exports
+
 -- deepseq
 -------------------------
 import Rebase.Control.DeepSeq as Exports

@@ -13,7 +13,7 @@ where
 
 -- base-prelude
 -------------------------
-import BasePrelude as Exports hiding (fail, Alt)
+import BasePrelude as Exports hiding (fail, Alt, first, second)
 
 -- base
 -------------------------

@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  1
+  1.0.1
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -81,6 +81,7 @@ library
     Rebase.Data.Vector.Mutable
     -- bytestring:
     Rebase.Data.ByteString
+    Rebase.Data.ByteString.Builder
     Rebase.Data.ByteString.Char8
     Rebase.Data.ByteString.Lazy
     Rebase.Data.ByteString.Lazy.Char8

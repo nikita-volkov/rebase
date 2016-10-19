@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  1.0.1
+  1.0.2
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -176,5 +176,5 @@ library
     either >= 4.4 && < 5,
     fail >= 4.9 && < 5,
     -- general:
-    base-prelude >= 1 && < 2,
+    base-prelude >= 0.1 && < 2,
     base >= 4.6 && < 5

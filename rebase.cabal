@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  1.0.2.1
+  1.0.3
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -150,7 +150,11 @@ library
     Rebase.Data.Either.Validation
     -- fail:
     Rebase.Control.Monad.Fail
+    -- stm:
+    Rebase.Control.Concurrent.STM
   build-depends:
+    -- concurrency:
+    stm >= 2 && < 3,
     -- data:
     hashable >= 1.2 && < 2,
     vector >= 0.10 && < 0.12,

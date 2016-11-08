@@ -137,6 +137,10 @@ import Rebase.Data.Void.Unsafe as Exports
 -------------------------
 import Rebase.Data.Time as Exports
 
+-- stm
+-------------------------
+import Rebase.Control.Concurrent.STM as Exports
+
 -- custom
 -------------------------
 import Rebase.Data.List1 as Exports (List1)

@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  1.0.4
+  1.0.5
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -172,7 +172,7 @@ library
     profunctors >= 5 && < 6,
     contravariant >= 1 && < 2,
     contravariant-extras >= 0.3.2 && < 0.4,
-    semigroups >= 0.18 && < 0.19,
+    semigroups >= 0.16 && < 0.19,
     semigroupoids >= 5 && < 6,
     deepseq >= 1.4 && < 2,
     transformers >= 0.4 && < 0.6,

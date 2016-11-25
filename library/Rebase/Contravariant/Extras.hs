@@ -1,6 +1,6 @@
 module Rebase.Contravariant.Extras
 (
-  module Contravariant.Extras,
+  module Contravariant.Extras
 )
 where
 

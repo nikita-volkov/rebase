@@ -1,6 +1,6 @@
 module Rebase.Data.Map.Strict
 (
-  module Data.Map.Strict,
+  module Data.Map.Strict
 )
 where
 

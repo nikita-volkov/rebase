@@ -1,6 +1,6 @@
 module Rebase.Control.Monad.Trans.Reader
 (
-  module Control.Monad.Trans.Reader,
+  module Control.Monad.Trans.Reader
 )
 where
 

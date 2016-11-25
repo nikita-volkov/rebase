@@ -1,6 +1,6 @@
 module Rebase.Data.Semigroup.Bitraversable
 (
-  module Data.Semigroup.Bitraversable,
+  module Data.Semigroup.Bitraversable
 )
 where
 

@@ -1,6 +1,6 @@
 module Rebase.Control.Monad.Writer.Class
 (
-  module Control.Monad.Writer.Class,
+  module Control.Monad.Writer.Class
 )
 where
 

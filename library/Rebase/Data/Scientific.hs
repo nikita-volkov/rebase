@@ -1,6 +1,6 @@
 module Rebase.Data.Scientific
 (
-  module Data.Scientific,
+  module Data.Scientific
 )
 where
 

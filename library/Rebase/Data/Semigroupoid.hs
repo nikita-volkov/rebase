@@ -1,6 +1,6 @@
 module Rebase.Data.Semigroupoid
 (
-  module Data.Semigroupoid,
+  module Data.Semigroupoid
 )
 where
 

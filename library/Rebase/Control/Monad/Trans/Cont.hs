@@ -1,6 +1,6 @@
 module Rebase.Control.Monad.Trans.Cont
 (
-  module Control.Monad.Trans.Cont,
+  module Control.Monad.Trans.Cont
 )
 where
 

@@ -1,6 +1,6 @@
 module Rebase.Data.Vector
 (
-  module Data.Vector,
+  module Data.Vector
 )
 where
 

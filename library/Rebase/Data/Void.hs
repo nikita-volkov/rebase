@@ -1,6 +1,6 @@
 module Rebase.Data.Void
 (
-  module Data.Void,
+  module Data.Void
 )
 where
 

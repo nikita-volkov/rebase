@@ -1,6 +1,6 @@
 module Rebase.Data.List.NonEmpty
 (
-  module Data.List.NonEmpty,
+  module Data.List.NonEmpty
 )
 where
 

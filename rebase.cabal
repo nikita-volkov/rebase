@@ -23,9 +23,9 @@ description:
   The package is intended to rapidly evolve with the contribution from the community,
   with the missing features being added with pull-requests.
 homepage:
-  https://github.com/nikita-volkov/rebase 
+  https://github.com/nikita-volkov/rebase
 bug-reports:
-  https://github.com/nikita-volkov/rebase/issues 
+  https://github.com/nikita-volkov/rebase/issues
 author:
   Nikita Volkov <nikita.y.volkov@mail.ru>
 maintainer:
@@ -41,13 +41,11 @@ build-type:
 cabal-version:
   >=1.10
 
-
 source-repository head
   type:
     git
   location:
     git://github.com/nikita-volkov/rebase.git
-
 
 library
   hs-source-dirs:
@@ -56,64 +54,45 @@ library
     NoImplicitPrelude, NoMonomorphismRestriction
   default-language:
     Haskell2010
-  other-modules:
   exposed-modules:
-    -- custom:
     Rebase.Prelude
     Rebase.Data.List1
-    -- base:
     Rebase.Data.Functor.Identity
     Rebase.Data.Bifunctor
     Rebase.Data.List
-    -- hashable:
     Rebase.Data.Hashable
-    -- containers:
     Rebase.Data.IntMap.Strict
     Rebase.Data.IntSet
     Rebase.Data.Map.Strict
     Rebase.Data.Sequence
     Rebase.Data.Set
-    -- unordered-containers:
     Rebase.Data.HashMap.Strict
     Rebase.Data.HashSet
-    -- vector:
     Rebase.Data.Vector
     Rebase.Data.Vector.Mutable
-    -- bytestring:
     Rebase.Data.ByteString
     Rebase.Data.ByteString.Builder
     Rebase.Data.ByteString.Char8
     Rebase.Data.ByteString.Lazy
     Rebase.Data.ByteString.Lazy.Char8
     Rebase.Data.ByteString.Short
-    -- text:
     Rebase.Data.Text
     Rebase.Data.Text.Encoding.Error
     Rebase.Data.Text.Lazy
     Rebase.Data.Text.Lazy.Builder
-    -- time:
     Rebase.Data.Time
-    -- scientific:
     Rebase.Data.Scientific
-    -- uuid:
     Rebase.Data.UUID
-    -- dlist:
     Rebase.Data.DList
-    -- void:
     Rebase.Data.Void
     Rebase.Data.Void.Unsafe
-    -- profunctors:
     Rebase.Data.Profunctor
     Rebase.Data.Profunctor.Unsafe
-    -- contravariant:
     Rebase.Data.Functor.Contravariant
     Rebase.Data.Functor.Contravariant.Divisible
-    -- contravariant-extras:
     Rebase.Contravariant.Extras
-    -- semigroups:
     Rebase.Data.Semigroup
     Rebase.Data.List.NonEmpty
-    -- semigroupoids:
     Rebase.Data.Bifunctor.Apply
     Rebase.Data.Functor.Alt
     Rebase.Data.Functor.Apply
@@ -125,9 +104,7 @@ library
     Rebase.Data.Semigroup.Foldable
     Rebase.Data.Semigroup.Traversable
     Rebase.Data.Semigroupoid
-    -- deepseq:
     Rebase.Control.DeepSeq
-    -- transformers:
     Rebase.Control.Monad.IO.Class
     Rebase.Control.Monad.Trans.Class
     Rebase.Control.Monad.Trans.Cont
@@ -138,19 +115,15 @@ library
     Rebase.Control.Monad.Trans.State.Strict
     Rebase.Control.Monad.Trans.Writer.Lazy
     Rebase.Control.Monad.Trans.Writer.Strict
-    -- mtl:
     Rebase.Control.Monad.Cont.Class
     Rebase.Control.Monad.Error.Class
     Rebase.Control.Monad.Reader.Class
     Rebase.Control.Monad.State.Class
     Rebase.Control.Monad.Writer.Class
-    -- either:
     Rebase.Control.Monad.Trans.Either
     Rebase.Data.Either.Combinators
     Rebase.Data.Either.Validation
-    -- fail:
     Rebase.Control.Monad.Fail
-    -- stm:
     Rebase.Control.Concurrent.STM
   build-depends:
     -- concurrency:

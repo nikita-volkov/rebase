@@ -1,6 +1,6 @@
 module Rebase.Data.Sequence
 (
-  module Data.Sequence,
+  module Data.Sequence
 )
 where
 

@@ -1,6 +1,6 @@
 module Rebase.Data.Profunctor
 (
-  module Data.Profunctor,
+  module Data.Profunctor
 )
 where
 

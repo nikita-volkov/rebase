@@ -1,6 +1,6 @@
 module Rebase.Data.Set
 (
-  module Data.Set,
+  module Data.Set
 )
 where
 

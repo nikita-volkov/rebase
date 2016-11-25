@@ -1,6 +1,6 @@
 module Rebase.Data.Functor.Identity
 (
-  module Data.Functor.Identity,
+  module Data.Functor.Identity
 )
 where
 

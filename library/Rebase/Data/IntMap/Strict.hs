@@ -1,6 +1,6 @@
 module Rebase.Data.IntMap.Strict
 (
-  module Data.IntMap.Strict,
+  module Data.IntMap.Strict
 )
 where
 

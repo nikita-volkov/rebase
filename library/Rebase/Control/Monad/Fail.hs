@@ -1,6 +1,6 @@
 module Rebase.Control.Monad.Fail
 (
-  module Control.Monad.Fail,
+  module Control.Monad.Fail
 )
 where
 

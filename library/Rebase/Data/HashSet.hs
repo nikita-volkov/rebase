@@ -1,6 +1,6 @@
 module Rebase.Data.HashSet
 (
-  module Data.HashSet,
+  module Data.HashSet
 )
 where
 

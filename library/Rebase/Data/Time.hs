@@ -1,6 +1,6 @@
 module Rebase.Data.Time
 (
-  module Data.Time,
+  module Data.Time
 )
 where
 

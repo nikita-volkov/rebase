@@ -1,6 +1,6 @@
 module Rebase.Data.ByteString.Lazy
 (
-  module Data.ByteString.Lazy,
+  module Data.ByteString.Lazy
 )
 where
 

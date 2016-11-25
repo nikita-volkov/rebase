@@ -1,6 +1,6 @@
 module Rebase.Data.Profunctor.Unsafe
 (
-  module Data.Profunctor.Unsafe,
+  module Data.Profunctor.Unsafe
 )
 where
 

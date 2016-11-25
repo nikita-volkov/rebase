@@ -1,6 +1,6 @@
 module Rebase.Data.UUID
 (
-  module Data.UUID,
+  module Data.UUID
 )
 where
 

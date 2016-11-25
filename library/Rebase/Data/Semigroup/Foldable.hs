@@ -1,6 +1,6 @@
 module Rebase.Data.Semigroup.Foldable
 (
-  module Data.Semigroup.Foldable,
+  module Data.Semigroup.Foldable
 )
 where
 

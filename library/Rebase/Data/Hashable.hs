@@ -1,6 +1,6 @@
 module Rebase.Data.Hashable
 (
-  module Data.Hashable,
+  module Data.Hashable
 )
 where
 

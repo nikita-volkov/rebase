@@ -1,6 +1,6 @@
 module Rebase.Control.Concurrent.STM
 (
-  module Control.Concurrent.STM,
+  module Control.Concurrent.STM
 )
 where
 

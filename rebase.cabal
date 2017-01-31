@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  1.0.7
+  1.0.8
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -330,6 +330,8 @@ library
     Rebase.Control.Concurrent.STM.TVar
     Rebase.Control.Monad.STM
     Rebase.Data.Scientific
+    Rebase.Data.ByteString.Builder.Scientific
+    Rebase.Data.Text.Lazy.Builder.Scientific
     Rebase.Data.UUID
     Rebase.Data.DList
     Rebase.Data.Void

@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  1.1
+  1.1.1
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -246,6 +246,8 @@ library
     Rebase.Data.Functor.Contravariant.Divisible
     Rebase.Data.Profunctor
     Rebase.Data.Profunctor.Unsafe
+    Rebase.Data.Profunctor.Strong
+    Rebase.Data.Profunctor.Choice
     Rebase.Data.Semigroup
     Rebase.Data.List.NonEmpty
     Rebase.Data.Bifunctor.Apply

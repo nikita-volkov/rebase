@@ -24,6 +24,8 @@ import Rebase.Data.List as Exports (List)
 -- profunctors
 -------------------------
 import Rebase.Data.Profunctor.Unsafe as Exports
+import Rebase.Data.Profunctor.Choice as Exports
+import Rebase.Data.Profunctor.Strong as Exports
 
 -- contravariant
 -------------------------

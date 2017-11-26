@@ -81,7 +81,6 @@ import Rebase.Control.Monad.Writer.Class as Exports
 
 -- either
 -------------------------
-import Rebase.Control.Monad.Trans.Either as Exports hiding (left, right)
 import Rebase.Data.Either.Combinators as Exports hiding (isLeft, isRight, mapLeft, mapRight, fromLeft, fromRight)
 import Rebase.Data.Either.Validation as Exports
 

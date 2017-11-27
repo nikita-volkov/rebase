@@ -17,8 +17,9 @@ import BasePrelude as Exports hiding (fail, Alt, first, second)
 
 -- base
 -------------------------
-import Rebase.Data.Functor.Identity as Exports
 import Rebase.Data.Bifunctor as Exports
+import Rebase.Data.Functor.Compose as Exports
+import Rebase.Data.Functor.Identity as Exports
 import Rebase.Data.List as Exports (List)
 
 -- profunctors

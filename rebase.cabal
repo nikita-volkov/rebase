@@ -1,7 +1,7 @@
 name:
   rebase
 version:
-  1.2.1
+  1.2.2
 synopsis:
   A more progressive alternative to the "base" package
 description:
@@ -70,7 +70,9 @@ library
     Rebase.Control.Monad.Fix
     Rebase.Control.Monad.ST
     Rebase.Control.Monad.ST.Lazy
+    Rebase.Control.Monad.ST.Lazy.Safe
     Rebase.Control.Monad.ST.Lazy.Unsafe
+    Rebase.Control.Monad.ST.Safe
     Rebase.Control.Monad.ST.Strict
     Rebase.Control.Monad.ST.Unsafe
     Rebase.Control.Monad.Zip
@@ -87,8 +89,8 @@ library
     Rebase.Data.Foldable
     Rebase.Data.Function
     Rebase.Data.Functor
-    Rebase.Data.IORef
     Rebase.Data.Int
+    Rebase.Data.IORef
     Rebase.Data.Ix
     Rebase.Data.List
     Rebase.Data.Maybe
@@ -117,27 +119,99 @@ library
     Rebase.Foreign.C.Types
     Rebase.Foreign.Concurrent
     Rebase.Foreign.ForeignPtr
+    Rebase.Foreign.ForeignPtr.Safe
     Rebase.Foreign.ForeignPtr.Unsafe
     Rebase.Foreign.Marshal
     Rebase.Foreign.Marshal.Alloc
     Rebase.Foreign.Marshal.Array
     Rebase.Foreign.Marshal.Error
     Rebase.Foreign.Marshal.Pool
+    Rebase.Foreign.Marshal.Safe
     Rebase.Foreign.Marshal.Unsafe
     Rebase.Foreign.Marshal.Utils
     Rebase.Foreign.Ptr
+    Rebase.Foreign.Safe
     Rebase.Foreign.StablePtr
     Rebase.Foreign.Storable
+    Rebase.GHC.Arr
+    Rebase.GHC.Base
+    Rebase.GHC.Char
+    Rebase.GHC.Conc
+    Rebase.GHC.Conc.IO
+    Rebase.GHC.Conc.Signal
+    Rebase.GHC.Conc.Sync
+    Rebase.GHC.ConsoleHandler
+    Rebase.GHC.Constants
+    Rebase.GHC.Desugar
+    Rebase.GHC.Enum
+    Rebase.GHC.Environment
+    Rebase.GHC.Err
+    Rebase.GHC.Exception
+    Rebase.GHC.Exts
+    Rebase.GHC.Fingerprint
+    Rebase.GHC.Fingerprint.Type
+    Rebase.GHC.Float
+    Rebase.GHC.Float.ConversionUtils
+    Rebase.GHC.Float.RealFracMethods
+    Rebase.GHC.Foreign
+    Rebase.GHC.ForeignPtr
+    Rebase.GHC.Generics
+    Rebase.GHC.GHCi
+    Rebase.GHC.Int
+    Rebase.GHC.IO
+    Rebase.GHC.IO.Buffer
+    Rebase.GHC.IO.BufferedIO
+    Rebase.GHC.IO.Device
+    Rebase.GHC.IO.Encoding
+    Rebase.GHC.IO.Encoding.CodePage
+    Rebase.GHC.IO.Encoding.Failure
+    Rebase.GHC.IO.Encoding.Iconv
+    Rebase.GHC.IO.Encoding.Latin1
+    Rebase.GHC.IO.Encoding.Types
+    Rebase.GHC.IO.Encoding.UTF16
+    Rebase.GHC.IO.Encoding.UTF32
+    Rebase.GHC.IO.Encoding.UTF8
+    Rebase.GHC.IO.Exception
+    Rebase.GHC.IO.FD
+    Rebase.GHC.IO.Handle
+    Rebase.GHC.IO.Handle.FD
+    Rebase.GHC.IO.Handle.Internals
+    Rebase.GHC.IO.Handle.Text
+    Rebase.GHC.IO.Handle.Types
+    Rebase.GHC.IO.IOMode
+    Rebase.GHC.IOArray
+    Rebase.GHC.IORef
+    Rebase.GHC.List
+    Rebase.GHC.MVar
+    Rebase.GHC.Num
+    Rebase.GHC.Pack
+    Rebase.GHC.PArr
+    Rebase.GHC.Profiling
+    Rebase.GHC.Ptr
+    Rebase.GHC.Read
+    Rebase.GHC.Real
+    Rebase.GHC.Show
+    Rebase.GHC.ST
+    Rebase.GHC.Stable
+    Rebase.GHC.Stack
+    Rebase.GHC.Stats
+    Rebase.GHC.Storable
+    Rebase.GHC.STRef
+    Rebase.GHC.TopHandler
+    Rebase.GHC.TypeLits
+    Rebase.GHC.Unicode
+    Rebase.GHC.Weak
+    Rebase.GHC.Word
     Rebase.Numeric
     Rebase.Prelude
-    Rebase.System.CPUTime
     Rebase.System.Console.GetOpt
+    Rebase.System.CPUTime
     Rebase.System.Environment
     Rebase.System.Exit
+    Rebase.System.Info
     Rebase.System.IO
     Rebase.System.IO.Error
     Rebase.System.IO.Unsafe
-    Rebase.System.Info
     Rebase.System.Mem
     Rebase.System.Mem.StableName
     Rebase.System.Mem.Weak

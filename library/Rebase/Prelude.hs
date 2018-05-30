@@ -113,6 +113,7 @@ import Rebase.Data.Vector as Exports (Vector)
 -- bytestring
 -------------------------
 import Rebase.Data.ByteString as Exports (ByteString)
+import Rebase.Data.ByteString.Short as Exports (ShortByteString)
 
 -- text
 -------------------------

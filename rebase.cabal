@@ -185,7 +185,6 @@ library
     Rebase.GHC.MVar
     Rebase.GHC.Num
     Rebase.GHC.Pack
-    Rebase.GHC.PArr
     Rebase.GHC.Profiling
     Rebase.GHC.Ptr
     Rebase.GHC.Read

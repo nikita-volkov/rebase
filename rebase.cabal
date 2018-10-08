@@ -55,8 +55,10 @@ library
   default-language:
     Haskell2010
   exposed-modules:
-    Rebase.Data.List1
+    Rebase.Contravariant.Extras
     Rebase.Control.Applicative
+    Rebase.Control.Applicative.Backwards
+    Rebase.Control.Applicative.Lift
     Rebase.Control.Arrow
     Rebase.Control.Category
     Rebase.Control.Concurrent
@@ -64,10 +66,33 @@ library
     Rebase.Control.Concurrent.MVar
     Rebase.Control.Concurrent.QSem
     Rebase.Control.Concurrent.QSemN
+    Rebase.Control.Concurrent.STM
+    Rebase.Control.Concurrent.STM.TArray
+    Rebase.Control.Concurrent.STM.TBQueue
+    Rebase.Control.Concurrent.STM.TChan
+    Rebase.Control.Concurrent.STM.TMVar
+    Rebase.Control.Concurrent.STM.TQueue
+    Rebase.Control.Concurrent.STM.TSem
+    Rebase.Control.Concurrent.STM.TVar
+    Rebase.Control.DeepSeq
     Rebase.Control.Exception
     Rebase.Control.Exception.Base
     Rebase.Control.Monad
+    Rebase.Control.Monad.Cont
+    Rebase.Control.Monad.Cont.Class
+    Rebase.Control.Monad.Error.Class
+    Rebase.Control.Monad.Fail
     Rebase.Control.Monad.Fix
+    Rebase.Control.Monad.Identity
+    Rebase.Control.Monad.IO.Class
+    Rebase.Control.Monad.List
+    Rebase.Control.Monad.Reader
+    Rebase.Control.Monad.Reader.Class
+    Rebase.Control.Monad.RWS
+    Rebase.Control.Monad.RWS.Class
+    Rebase.Control.Monad.RWS.Lazy
+    Rebase.Control.Monad.RWS.Strict
+    Rebase.Control.Monad.Signatures
     Rebase.Control.Monad.ST
     Rebase.Control.Monad.ST.Lazy
     Rebase.Control.Monad.ST.Lazy.Safe
@@ -75,41 +100,203 @@ library
     Rebase.Control.Monad.ST.Safe
     Rebase.Control.Monad.ST.Strict
     Rebase.Control.Monad.ST.Unsafe
+    Rebase.Control.Monad.State
+    Rebase.Control.Monad.State.Class
+    Rebase.Control.Monad.State.Lazy
+    Rebase.Control.Monad.State.Strict
+    Rebase.Control.Monad.STM
+    Rebase.Control.Monad.Trans
+    Rebase.Control.Monad.Trans.Class
+    Rebase.Control.Monad.Trans.Cont
+    Rebase.Control.Monad.Trans.Except
+    Rebase.Control.Monad.Trans.Identity
+    Rebase.Control.Monad.Trans.List
+    Rebase.Control.Monad.Trans.Maybe
+    Rebase.Control.Monad.Trans.Reader
+    Rebase.Control.Monad.Trans.RWS
+    Rebase.Control.Monad.Trans.RWS.Lazy
+    Rebase.Control.Monad.Trans.RWS.Strict
+    Rebase.Control.Monad.Trans.State
+    Rebase.Control.Monad.Trans.State.Lazy
+    Rebase.Control.Monad.Trans.State.Strict
+    Rebase.Control.Monad.Trans.Writer
+    Rebase.Control.Monad.Trans.Writer.Lazy
+    Rebase.Control.Monad.Trans.Writer.Strict
+    Rebase.Control.Monad.Writer
+    Rebase.Control.Monad.Writer.Class
+    Rebase.Control.Monad.Writer.Lazy
+    Rebase.Control.Monad.Writer.Strict
     Rebase.Control.Monad.Zip
+    Rebase.Data.Biapplicative
+    Rebase.Data.Bifoldable
+    Rebase.Data.Bifunctor
+    Rebase.Data.Bifunctor.Apply
+    Rebase.Data.Bifunctor.Biff
+    Rebase.Data.Bifunctor.Clown
+    Rebase.Data.Bifunctor.Flip
+    Rebase.Data.Bifunctor.Join
+    Rebase.Data.Bifunctor.Joker
+    Rebase.Data.Bifunctor.Product
+    Rebase.Data.Bifunctor.Tannen
+    Rebase.Data.Bifunctor.Wrapped
+    Rebase.Data.Bitraversable
     Rebase.Data.Bits
     Rebase.Data.Bool
+    Rebase.Data.ByteString
+    Rebase.Data.ByteString.Builder
+    Rebase.Data.ByteString.Builder.Extra
+    Rebase.Data.ByteString.Builder.Internal
+    Rebase.Data.ByteString.Builder.Prim
+    Rebase.Data.ByteString.Builder.Prim.Internal
+    Rebase.Data.ByteString.Builder.Scientific
+    Rebase.Data.ByteString.Char8
+    Rebase.Data.ByteString.Internal
+    Rebase.Data.ByteString.Lazy
+    Rebase.Data.ByteString.Lazy.Builder
+    Rebase.Data.ByteString.Lazy.Builder.ASCII
+    Rebase.Data.ByteString.Lazy.Builder.Extras
+    Rebase.Data.ByteString.Lazy.Char8
+    Rebase.Data.ByteString.Lazy.Internal
+    Rebase.Data.ByteString.Short
+    Rebase.Data.ByteString.Short.Internal
+    Rebase.Data.ByteString.Unsafe
     Rebase.Data.Char
     Rebase.Data.Coerce
     Rebase.Data.Complex
     Rebase.Data.Data
+    Rebase.Data.DList
     Rebase.Data.Dynamic
     Rebase.Data.Either
+    Rebase.Data.Either.Combinators
+    Rebase.Data.Either.Validation
     Rebase.Data.Eq
     Rebase.Data.Fixed
     Rebase.Data.Foldable
     Rebase.Data.Function
     Rebase.Data.Functor
+    Rebase.Data.Functor.Alt
+    Rebase.Data.Functor.Apply
+    Rebase.Data.Functor.Bind
+    Rebase.Data.Functor.Bind.Class
+    Rebase.Data.Functor.Bind.Trans
+    Rebase.Data.Functor.Classes
+    Rebase.Data.Functor.Compose
+    Rebase.Data.Functor.Constant
+    Rebase.Data.Functor.Contravariant
+    Rebase.Data.Functor.Contravariant.Compose
+    Rebase.Data.Functor.Contravariant.Divisible
+    Rebase.Data.Functor.Extend
+    Rebase.Data.Functor.Identity
+    Rebase.Data.Functor.Plus
+    Rebase.Data.Functor.Product
+    Rebase.Data.Functor.Reverse
+    Rebase.Data.Functor.Sum
+    Rebase.Data.Graph
+    Rebase.Data.Groupoid
+    Rebase.Data.Hashable
+    Rebase.Data.HashMap.Lazy
+    Rebase.Data.HashMap.Strict
+    Rebase.Data.HashSet
     Rebase.Data.Int
+    Rebase.Data.IntMap
+    Rebase.Data.IntMap.Lazy
+    Rebase.Data.IntMap.Strict
+    Rebase.Data.IntSet
     Rebase.Data.IORef
+    Rebase.Data.Isomorphism
     Rebase.Data.Ix
     Rebase.Data.List
+    Rebase.Data.List.NonEmpty
+    Rebase.Data.List1
+    Rebase.Data.Map
+    Rebase.Data.Map.Lazy
+    Rebase.Data.Map.Strict
     Rebase.Data.Maybe
     Rebase.Data.Monoid
     Rebase.Data.Ord
+    Rebase.Data.Profunctor
+    Rebase.Data.Profunctor.Choice
+    Rebase.Data.Profunctor.Strong
+    Rebase.Data.Profunctor.Unsafe
     Rebase.Data.Proxy
     Rebase.Data.Ratio
+    Rebase.Data.Scientific
+    Rebase.Data.Semigroup
+    Rebase.Data.Semigroup.Bifoldable
+    Rebase.Data.Semigroup.Bitraversable
+    Rebase.Data.Semigroup.Foldable
+    Rebase.Data.Semigroup.Foldable.Class
+    Rebase.Data.Semigroup.Traversable
+    Rebase.Data.Semigroup.Traversable.Class
+    Rebase.Data.Semigroupoid
+    Rebase.Data.Semigroupoid.Dual
+    Rebase.Data.Semigroupoid.Ob
+    Rebase.Data.Semigroupoid.Static
+    Rebase.Data.Sequence
+    Rebase.Data.Set
     Rebase.Data.STRef
     Rebase.Data.STRef.Lazy
     Rebase.Data.STRef.Strict
     Rebase.Data.String
+    Rebase.Data.Text
+    Rebase.Data.Text.Array
+    Rebase.Data.Text.Encoding
+    Rebase.Data.Text.Encoding.Error
+    Rebase.Data.Text.Foreign
+    Rebase.Data.Text.Internal
+    Rebase.Data.Text.IO
+    Rebase.Data.Text.Lazy
+    Rebase.Data.Text.Lazy.Builder
+    Rebase.Data.Text.Lazy.Builder.Int
+    Rebase.Data.Text.Lazy.Builder.RealFloat
+    Rebase.Data.Text.Lazy.Builder.Scientific
+    Rebase.Data.Text.Lazy.Encoding
+    Rebase.Data.Text.Lazy.IO
+    Rebase.Data.Text.Lazy.Read
+    Rebase.Data.Text.Read
+    Rebase.Data.Text.Unsafe
+    Rebase.Data.Time
+    Rebase.Data.Time.Calendar
+    Rebase.Data.Time.Calendar.Easter
+    Rebase.Data.Time.Calendar.Julian
+    Rebase.Data.Time.Calendar.MonthDay
+    Rebase.Data.Time.Calendar.OrdinalDate
+    Rebase.Data.Time.Calendar.WeekDate
+    Rebase.Data.Time.Clock
+    Rebase.Data.Time.Clock.POSIX
+    Rebase.Data.Time.Clock.TAI
+    Rebase.Data.Time.Format
+    Rebase.Data.Time.LocalTime
     Rebase.Data.Traversable
+    Rebase.Data.Traversable.Instances
+    Rebase.Data.Tree
     Rebase.Data.Tuple
     Rebase.Data.Type.Bool
     Rebase.Data.Type.Coercion
     Rebase.Data.Type.Equality
     Rebase.Data.Typeable
     Rebase.Data.Unique
+    Rebase.Data.UUID
+    Rebase.Data.Vector
+    Rebase.Data.Vector.Fusion.Stream.Monadic
+    Rebase.Data.Vector.Fusion.Util
+    Rebase.Data.Vector.Generic
+    Rebase.Data.Vector.Generic.Base
+    Rebase.Data.Vector.Generic.Mutable
+    Rebase.Data.Vector.Generic.New
+    Rebase.Data.Vector.Internal.Check
+    Rebase.Data.Vector.Mutable
+    Rebase.Data.Vector.Primitive
+    Rebase.Data.Vector.Primitive.Mutable
+    Rebase.Data.Vector.Storable
+    Rebase.Data.Vector.Storable.Internal
+    Rebase.Data.Vector.Storable.Mutable
+    Rebase.Data.Vector.Unboxed
+    Rebase.Data.Vector.Unboxed.Base
+    Rebase.Data.Vector.Unboxed.Mutable
     Rebase.Data.Version
+    Rebase.Data.Void
+    Rebase.Data.Void.Unsafe
     Rebase.Data.Word
     Rebase.Debug.Trace
     Rebase.Foreign
@@ -225,193 +412,6 @@ library
     Rebase.Text.Show
     Rebase.Text.Show.Functions
     Rebase.Unsafe.Coerce
-    Rebase.Data.Hashable
-    Rebase.Data.Vector
-    Rebase.Data.Vector.Fusion.Stream.Monadic
-    Rebase.Data.Vector.Fusion.Util
-    Rebase.Data.Vector.Generic
-    Rebase.Data.Vector.Generic.Base
-    Rebase.Data.Vector.Generic.Mutable
-    Rebase.Data.Vector.Generic.New
-    Rebase.Data.Vector.Internal.Check
-    Rebase.Data.Vector.Mutable
-    Rebase.Data.Vector.Primitive
-    Rebase.Data.Vector.Primitive.Mutable
-    Rebase.Data.Vector.Storable
-    Rebase.Data.Vector.Storable.Internal
-    Rebase.Data.Vector.Storable.Mutable
-    Rebase.Data.Vector.Unboxed
-    Rebase.Data.Vector.Unboxed.Base
-    Rebase.Data.Vector.Unboxed.Mutable
-    Rebase.Data.HashMap.Lazy
-    Rebase.Data.HashMap.Strict
-    Rebase.Data.HashSet
-    Rebase.Data.Graph
-    Rebase.Data.IntMap
-    Rebase.Data.IntMap.Lazy
-    Rebase.Data.IntMap.Strict
-    Rebase.Data.IntSet
-    Rebase.Data.Map
-    Rebase.Data.Map.Lazy
-    Rebase.Data.Map.Strict
-    Rebase.Data.Sequence
-    Rebase.Data.Set
-    Rebase.Data.Tree
-    Rebase.Data.ByteString
-    Rebase.Data.ByteString.Builder
-    Rebase.Data.ByteString.Builder.Extra
-    Rebase.Data.ByteString.Builder.Internal
-    Rebase.Data.ByteString.Builder.Prim
-    Rebase.Data.ByteString.Builder.Prim.Internal
-    Rebase.Data.ByteString.Char8
-    Rebase.Data.ByteString.Internal
-    Rebase.Data.ByteString.Lazy
-    Rebase.Data.ByteString.Lazy.Builder
-    Rebase.Data.ByteString.Lazy.Builder.ASCII
-    Rebase.Data.ByteString.Lazy.Builder.Extras
-    Rebase.Data.ByteString.Lazy.Char8
-    Rebase.Data.ByteString.Lazy.Internal
-    Rebase.Data.ByteString.Short
-    Rebase.Data.ByteString.Short.Internal
-    Rebase.Data.ByteString.Unsafe
-    Rebase.Data.Text
-    Rebase.Data.Text.Array
-    Rebase.Data.Text.Encoding
-    Rebase.Data.Text.Encoding.Error
-    Rebase.Data.Text.Foreign
-    Rebase.Data.Text.IO
-    Rebase.Data.Text.Internal
-    Rebase.Data.Text.Lazy
-    Rebase.Data.Text.Lazy.Builder
-    Rebase.Data.Text.Lazy.Builder.Int
-    Rebase.Data.Text.Lazy.Builder.RealFloat
-    Rebase.Data.Text.Lazy.Encoding
-    Rebase.Data.Text.Lazy.IO
-    Rebase.Data.Text.Lazy.Read
-    Rebase.Data.Text.Read
-    Rebase.Data.Text.Unsafe
-    Rebase.Data.Time
-    Rebase.Data.Time.Calendar
-    Rebase.Data.Time.Calendar.Easter
-    Rebase.Data.Time.Calendar.Julian
-    Rebase.Data.Time.Calendar.MonthDay
-    Rebase.Data.Time.Calendar.OrdinalDate
-    Rebase.Data.Time.Calendar.WeekDate
-    Rebase.Data.Time.Clock
-    Rebase.Data.Time.Clock.POSIX
-    Rebase.Data.Time.Clock.TAI
-    Rebase.Data.Time.Format
-    Rebase.Data.Time.LocalTime
-    Rebase.Data.Biapplicative
-    Rebase.Data.Bifoldable
-    Rebase.Data.Bifunctor
-    Rebase.Data.Bifunctor.Biff
-    Rebase.Data.Bifunctor.Clown
-    Rebase.Data.Bifunctor.Flip
-    Rebase.Data.Bifunctor.Join
-    Rebase.Data.Bifunctor.Joker
-    Rebase.Data.Bifunctor.Product
-    Rebase.Data.Bifunctor.Tannen
-    Rebase.Data.Bifunctor.Wrapped
-    Rebase.Data.Bitraversable
-    Rebase.Data.Functor.Contravariant
-    Rebase.Data.Functor.Contravariant.Compose
-    Rebase.Data.Functor.Contravariant.Divisible
-    Rebase.Data.Profunctor
-    Rebase.Data.Profunctor.Unsafe
-    Rebase.Data.Profunctor.Strong
-    Rebase.Data.Profunctor.Choice
-    Rebase.Data.Semigroup
-    Rebase.Data.List.NonEmpty
-    Rebase.Data.Bifunctor.Apply
-    Rebase.Data.Functor.Alt
-    Rebase.Data.Functor.Apply
-    Rebase.Data.Functor.Bind
-    Rebase.Data.Functor.Bind.Class
-    Rebase.Data.Functor.Bind.Trans
-    Rebase.Data.Functor.Extend
-    Rebase.Data.Functor.Plus
-    Rebase.Data.Groupoid
-    Rebase.Data.Isomorphism
-    Rebase.Data.Semigroup.Bifoldable
-    Rebase.Data.Semigroup.Bitraversable
-    Rebase.Data.Semigroup.Foldable
-    Rebase.Data.Semigroup.Foldable.Class
-    Rebase.Data.Semigroup.Traversable
-    Rebase.Data.Semigroup.Traversable.Class
-    Rebase.Data.Semigroupoid
-    Rebase.Data.Semigroupoid.Dual
-    Rebase.Data.Semigroupoid.Ob
-    Rebase.Data.Semigroupoid.Static
-    Rebase.Data.Traversable.Instances
-    Rebase.Control.Applicative.Backwards
-    Rebase.Control.Applicative.Lift
-    Rebase.Control.Monad.IO.Class
-    Rebase.Control.Monad.Signatures
-    Rebase.Control.Monad.Trans.Class
-    Rebase.Control.Monad.Trans.Cont
-    Rebase.Control.Monad.Trans.Except
-    Rebase.Control.Monad.Trans.Identity
-    Rebase.Control.Monad.Trans.List
-    Rebase.Control.Monad.Trans.Maybe
-    Rebase.Control.Monad.Trans.RWS
-    Rebase.Control.Monad.Trans.RWS.Lazy
-    Rebase.Control.Monad.Trans.RWS.Strict
-    Rebase.Control.Monad.Trans.Reader
-    Rebase.Control.Monad.Trans.State
-    Rebase.Control.Monad.Trans.State.Lazy
-    Rebase.Control.Monad.Trans.State.Strict
-    Rebase.Control.Monad.Trans.Writer
-    Rebase.Control.Monad.Trans.Writer.Lazy
-    Rebase.Control.Monad.Trans.Writer.Strict
-    Rebase.Data.Functor.Classes
-    Rebase.Data.Functor.Compose
-    Rebase.Data.Functor.Constant
-    Rebase.Data.Functor.Identity
-    Rebase.Data.Functor.Product
-    Rebase.Data.Functor.Reverse
-    Rebase.Data.Functor.Sum
-    Rebase.Control.Monad.Cont
-    Rebase.Control.Monad.Cont.Class
-    Rebase.Control.Monad.Error.Class
-    Rebase.Control.Monad.Identity
-    Rebase.Control.Monad.List
-    Rebase.Control.Monad.RWS
-    Rebase.Control.Monad.RWS.Class
-    Rebase.Control.Monad.RWS.Lazy
-    Rebase.Control.Monad.RWS.Strict
-    Rebase.Control.Monad.Reader
-    Rebase.Control.Monad.Reader.Class
-    Rebase.Control.Monad.State
-    Rebase.Control.Monad.State.Class
-    Rebase.Control.Monad.State.Lazy
-    Rebase.Control.Monad.State.Strict
-    Rebase.Control.Monad.Trans
-    Rebase.Control.Monad.Writer
-    Rebase.Control.Monad.Writer.Class
-    Rebase.Control.Monad.Writer.Lazy
-    Rebase.Control.Monad.Writer.Strict
-    Rebase.Data.Either.Combinators
-    Rebase.Data.Either.Validation
-    Rebase.Control.Concurrent.STM
-    Rebase.Control.Concurrent.STM.TArray
-    Rebase.Control.Concurrent.STM.TBQueue
-    Rebase.Control.Concurrent.STM.TChan
-    Rebase.Control.Concurrent.STM.TMVar
-    Rebase.Control.Concurrent.STM.TQueue
-    Rebase.Control.Concurrent.STM.TSem
-    Rebase.Control.Concurrent.STM.TVar
-    Rebase.Control.Monad.STM
-    Rebase.Data.Scientific
-    Rebase.Data.ByteString.Builder.Scientific
-    Rebase.Data.Text.Lazy.Builder.Scientific
-    Rebase.Data.UUID
-    Rebase.Data.DList
-    Rebase.Data.Void
-    Rebase.Data.Void.Unsafe
-    Rebase.Contravariant.Extras
-    Rebase.Control.DeepSeq
-    Rebase.Control.Monad.Fail
   build-depends:
     -- concurrency:
     stm >= 2 && < 3,

@@ -443,4 +443,4 @@ library
     fail >= 4.9 && < 5,
     -- general:
     base-prelude >= 0.1 && < 2,
-    base >= 4.9 && < 5
+    base >= 4.10 && < 5

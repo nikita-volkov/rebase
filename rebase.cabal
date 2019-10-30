@@ -127,6 +127,10 @@ library
     Rebase.Control.Monad.Writer.Lazy
     Rebase.Control.Monad.Writer.Strict
     Rebase.Control.Monad.Zip
+    Rebase.Control.Selective
+    Rebase.Control.Selective.Free
+    Rebase.Control.Selective.Rigid.Free
+    Rebase.Control.Selective.Rigid.Freer
     Rebase.Data.Biapplicative
     Rebase.Data.Bifoldable
     Rebase.Data.Bifunctor
@@ -437,6 +441,7 @@ library
     semigroups >= 0.16 && < 0.20,
     semigroupoids >= 5.2.2 && < 6,
     deepseq >= 1.4 && < 2,
+    selective >= 0.3 && < 0.4,
     transformers >= 0.4 && < 0.6,
     mtl >= 2.2 && < 3.0,
     either >= 5 && < 6,

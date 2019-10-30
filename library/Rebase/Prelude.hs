@@ -13,7 +13,7 @@ where
 
 -- base-prelude
 -------------------------
-import BasePrelude as Exports hiding (fail, Alt, first, second)
+import BasePrelude as Exports hiding (fail, Alt, first, second, orElse)
 
 -- base
 -------------------------
@@ -60,6 +60,10 @@ import Rebase.Data.Semigroupoid as Exports
 -------------------------
 import Rebase.Control.DeepSeq as Exports
 
+-- selective
+-------------------------
+import Rebase.Control.Selective as Exports
+
 -- transformers
 -------------------------
 import Rebase.Control.Monad.IO.Class as Exports
@@ -82,7 +86,6 @@ import Rebase.Control.Monad.Writer.Class as Exports
 -- either
 -------------------------
 import Rebase.Data.Either.Combinators as Exports hiding (isLeft, isRight, mapLeft, mapRight, fromLeft, fromRight)
-import Rebase.Data.Either.Validation as Exports
 
 -- fail
 -------------------------
@@ -141,7 +144,7 @@ import Rebase.Data.Time as Exports
 
 -- stm
 -------------------------
-import Rebase.Control.Concurrent.STM as Exports
+import Rebase.Control.Concurrent.STM as Exports hiding (orElse)
 
 -- custom
 -------------------------

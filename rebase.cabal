@@ -57,6 +57,7 @@ library
     Rebase.Control.Concurrent.STM.TQueue
     Rebase.Control.Concurrent.STM.TSem
     Rebase.Control.Concurrent.STM.TVar
+    Rebase.Control.Comonad
     Rebase.Control.DeepSeq
     Rebase.Control.Exception
     Rebase.Control.Exception.Base
@@ -409,6 +410,7 @@ library
     containers >=0.5 && <0.7,
     contravariant >=1 && <2,
     contravariant-extras >=0.3.2 && <0.4,
+    comonad >=5 && <6,
     deepseq >=1.4 && <2,
     dlist >=0.7 && <0.9,
     either >=5 && <6,

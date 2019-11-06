@@ -56,6 +56,10 @@ import Rebase.Data.Semigroup.Foldable as Exports
 import Rebase.Data.Semigroup.Traversable as Exports
 import Rebase.Data.Semigroupoid as Exports
 
+-- comonad
+-------------------------
+import Rebase.Control.Comonad as Exports
+
 -- deepseq
 -------------------------
 import Rebase.Control.DeepSeq as Exports

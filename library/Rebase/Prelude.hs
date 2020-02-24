@@ -66,7 +66,7 @@ import Rebase.Control.DeepSeq as Exports
 
 -- selective
 -------------------------
-import Rebase.Control.Selective as Exports
+import Rebase.Control.Selective as Exports hiding (swapEither)
 
 -- transformers
 -------------------------

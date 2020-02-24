@@ -113,6 +113,7 @@ library
     Rebase.Control.Monad.Zip
     Rebase.Control.Selective
     Rebase.Control.Selective.Free
+    Rebase.Control.Selective.Multi
     Rebase.Control.Selective.Rigid.Free
     Rebase.Control.Selective.Rigid.Freer
     Rebase.Data.Biapplicative
@@ -419,7 +420,7 @@ library
     mtl >=2.2 && <3.0,
     profunctors >=5 && <6,
     scientific >=0.3 && <0.4,
-    selective >=0.3 && <0.4,
+    selective >=0.4 && <0.5,
     semigroupoids >=5.2.2 && <6,
     semigroups >=0.16 && <0.20,
     stm >=2 && <3,

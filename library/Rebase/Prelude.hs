@@ -46,10 +46,11 @@ import Data.Ix as Exports
 import Data.List as Exports hiding (concat, foldr, foldl1, maximum, minimum, product, sum, all, and, any, concatMap, elem, foldl, foldr1, notElem, or, find, maximumBy, minimumBy, mapAccumL, mapAccumR, foldl')
 import Data.List.NonEmpty as Exports (NonEmpty(..))
 import Data.Maybe as Exports
-import Data.Monoid as Exports hiding (Alt)
+import Data.Monoid as Exports hiding (Alt, First(..), Last(..))
 import Data.Ord as Exports
 import Data.Proxy as Exports
 import Data.Ratio as Exports
+import Data.Semigroup as Exports
 import Data.STRef as Exports
 import Data.String as Exports
 import Data.Traversable as Exports
@@ -101,7 +102,6 @@ import Rebase.Contravariant.Extras as Exports
 
 -- semigroups
 -------------------------
-import Rebase.Data.Semigroup as Exports hiding ((<>), Last(..), First(..))
 import Rebase.Data.List.NonEmpty as Exports (NonEmpty)
 
 -- semigroupoids

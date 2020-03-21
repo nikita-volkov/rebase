@@ -380,6 +380,7 @@ library
     Rebase.GHC.Weak
     Rebase.GHC.Word
     Rebase.Numeric
+    Rebase.Numeric.Natural
     Rebase.Prelude
     Rebase.System.Console.GetOpt
     Rebase.System.CPUTime

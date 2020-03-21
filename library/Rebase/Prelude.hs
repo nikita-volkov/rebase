@@ -13,77 +13,77 @@ where
 
 -- base
 -------------------------
-import Control.Applicative as Exports
-import Control.Arrow as Exports hiding (first, second)
-import Control.Category as Exports
-import Control.Concurrent as Exports
-import Control.Exception as Exports
-import Control.Monad as Exports hiding (fail, mapM_, sequence_, forM_, msum, mapM, sequence, forM)
-import Control.Monad.Fail as Exports
-import Control.Monad.Fix as Exports hiding (fix)
-import Control.Monad.IO.Class as Exports
-import Control.Monad.ST as Exports
-import Data.Bifunctor as Exports
-import Data.Bits as Exports
-import Data.Bool as Exports
-import Data.Char as Exports
-import Data.Coerce as Exports
-import Data.Complex as Exports
-import Data.Data as Exports
-import Data.Dynamic as Exports
-import Data.Either as Exports
-import Data.Fixed as Exports
-import Data.Foldable as Exports
-import Data.Function as Exports hiding (id, (.))
-import Data.Functor as Exports
-import Data.Functor.Classes as Exports
-import Data.Functor.Compose as Exports
-import Data.Functor.Contravariant as Exports
-import Data.Functor.Identity as Exports
-import Data.Int as Exports
-import Data.IORef as Exports
-import Data.Ix as Exports
-import Data.List as Exports hiding (concat, foldr, foldl1, maximum, minimum, product, sum, all, and, any, concatMap, elem, foldl, foldr1, notElem, or, find, maximumBy, minimumBy, mapAccumL, mapAccumR, foldl')
-import Data.List.NonEmpty as Exports (NonEmpty(..))
-import Data.Maybe as Exports
-import Data.Monoid as Exports hiding (Alt, First(..), Last(..), (<>))
-import Data.Ord as Exports
-import Data.Proxy as Exports
-import Data.Ratio as Exports
-import Data.Semigroup as Exports
-import Data.STRef as Exports
-import Data.String as Exports
-import Data.Traversable as Exports
-import Data.Tuple as Exports
-import Data.Unique as Exports
-import Data.Version as Exports
-import Data.Void as Exports
-import Data.Word as Exports
-import Debug.Trace as Exports
-import Foreign.ForeignPtr as Exports
-import Foreign.Ptr as Exports
-import Foreign.StablePtr as Exports
-import Foreign.Storable as Exports
-import GHC.Conc as Exports hiding (orElse, withMVar, threadWaitWriteSTM, threadWaitWrite, threadWaitReadSTM, threadWaitRead)
-import GHC.Exts as Exports (lazy, inline, sortWith, groupWith)
-import GHC.Generics as Exports (Generic)
-import GHC.IO.Exception as Exports
-import Numeric as Exports
-import Numeric.Natural as Exports
 import Prelude as Exports hiding (fail, concat, foldr, mapM_, sequence_, foldl1, maximum, minimum, product, sum, all, and, any, concatMap, elem, foldl, foldr1, notElem, or, mapM, sequence, id, (.))
-import System.Environment as Exports
-import System.Exit as Exports
-import System.IO as Exports (Handle, hClose)
-import System.IO.Error as Exports
-import System.IO.Unsafe as Exports
-import System.Mem as Exports
-import System.Mem.StableName as Exports
-import System.Timeout as Exports
-import Text.ParserCombinators.ReadP as Exports (ReadP, ReadS, readP_to_S, readS_to_P)
-import Text.ParserCombinators.ReadPrec as Exports (ReadPrec, readPrec_to_P, readP_to_Prec, readPrec_to_S, readS_to_Prec)
-import Text.Printf as Exports (printf, hPrintf)
-import Text.Read as Exports (Read(..), readMaybe, readEither)
-import Unsafe.Coerce as Exports
+import Rebase.Control.Applicative as Exports
+import Rebase.Control.Arrow as Exports hiding (first, second)
+import Rebase.Control.Category as Exports
+import Rebase.Control.Concurrent as Exports
+import Rebase.Control.Exception as Exports
+import Rebase.Control.Monad as Exports hiding (fail, mapM_, sequence_, forM_, msum, mapM, sequence, forM)
+import Rebase.Control.Monad.Fail as Exports
+import Rebase.Control.Monad.Fix as Exports hiding (fix)
+import Rebase.Control.Monad.IO.Class as Exports
+import Rebase.Control.Monad.ST as Exports
+import Rebase.Data.Bifunctor as Exports
+import Rebase.Data.Bits as Exports
+import Rebase.Data.Bool as Exports
+import Rebase.Data.Char as Exports
+import Rebase.Data.Coerce as Exports
+import Rebase.Data.Complex as Exports
+import Rebase.Data.Data as Exports
+import Rebase.Data.Dynamic as Exports
+import Rebase.Data.Either as Exports
+import Rebase.Data.Fixed as Exports
+import Rebase.Data.Foldable as Exports
+import Rebase.Data.Function as Exports hiding (id, (.))
+import Rebase.Data.Functor as Exports
+import Rebase.Data.Functor.Classes as Exports
+import Rebase.Data.Functor.Compose as Exports
+import Rebase.Data.Functor.Contravariant as Exports
+import Rebase.Data.Functor.Identity as Exports
+import Rebase.Data.Int as Exports
+import Rebase.Data.IORef as Exports
+import Rebase.Data.Ix as Exports
+import Rebase.Data.List as Exports hiding (concat, foldr, foldl1, maximum, minimum, product, sum, all, and, any, concatMap, elem, foldl, foldr1, notElem, or, find, maximumBy, minimumBy, mapAccumL, mapAccumR, foldl')
+import Rebase.Data.List.NonEmpty as Exports (NonEmpty(..))
+import Rebase.Data.Maybe as Exports
+import Rebase.Data.Monoid as Exports hiding (Alt, First(..), Last(..), (<>))
+import Rebase.Data.Ord as Exports
+import Rebase.Data.Proxy as Exports
+import Rebase.Data.Ratio as Exports
+import Rebase.Data.Semigroup as Exports
+import Rebase.Data.STRef as Exports
+import Rebase.Data.String as Exports
+import Rebase.Data.Traversable as Exports
+import Rebase.Data.Tuple as Exports
+import Rebase.Data.Unique as Exports
+import Rebase.Data.Version as Exports
+import Rebase.Data.Void as Exports
+import Rebase.Data.Word as Exports
+import Rebase.Debug.Trace as Exports
+import Rebase.Foreign.ForeignPtr as Exports
+import Rebase.Foreign.Ptr as Exports
+import Rebase.Foreign.StablePtr as Exports
+import Rebase.Foreign.Storable as Exports
+import Rebase.GHC.Conc as Exports hiding (orElse, withMVar, threadWaitWriteSTM, threadWaitWrite, threadWaitReadSTM, threadWaitRead)
+import Rebase.GHC.Exts as Exports (lazy, inline, sortWith, groupWith)
+import Rebase.GHC.Generics as Exports (Generic)
+import Rebase.GHC.IO.Exception as Exports
+import Rebase.Numeric as Exports
+import Rebase.Numeric.Natural as Exports
+import Rebase.System.Environment as Exports
+import Rebase.System.Exit as Exports
+import Rebase.System.IO as Exports (Handle, hClose)
+import Rebase.System.IO.Error as Exports
+import Rebase.System.IO.Unsafe as Exports
+import Rebase.System.Mem as Exports
+import Rebase.System.Mem.StableName as Exports
+import Rebase.System.Timeout as Exports
+import Rebase.Text.ParserCombinators.ReadP as Exports (ReadP, ReadS, readP_to_S, readS_to_P)
+import Rebase.Text.ParserCombinators.ReadPrec as Exports (ReadPrec, readPrec_to_P, readP_to_Prec, readPrec_to_S, readS_to_Prec)
+import Rebase.Text.Printf as Exports (printf, hPrintf)
+import Rebase.Text.Read as Exports (Read(..), readMaybe, readEither)
+import Rebase.Unsafe.Coerce as Exports
 
 -- profunctors
 -------------------------

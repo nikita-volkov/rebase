@@ -87,9 +87,22 @@ import Rebase.Unsafe.Coerce as Exports
 
 -- profunctors
 -------------------------
-import Rebase.Data.Profunctor.Unsafe as Exports
+import Rebase.Data.Profunctor as Exports hiding (WrappedArrow(..))
+import Rebase.Data.Profunctor.Adjunction as Exports
+import Rebase.Data.Profunctor.Cayley as Exports
 import Rebase.Data.Profunctor.Choice as Exports
+import Rebase.Data.Profunctor.Closed as Exports
+import Rebase.Data.Profunctor.Composition as Exports
+import Rebase.Data.Profunctor.Mapping as Exports
+import Rebase.Data.Profunctor.Monad as Exports
+import Rebase.Data.Profunctor.Ran as Exports
+import Rebase.Data.Profunctor.Rep as Exports
+import Rebase.Data.Profunctor.Sieve as Exports
 import Rebase.Data.Profunctor.Strong as Exports
+import Rebase.Data.Profunctor.Traversing as Exports
+import Rebase.Data.Profunctor.Types as Exports hiding (WrappedArrow(..))
+import Rebase.Data.Profunctor.Unsafe as Exports
+import Rebase.Data.Profunctor.Yoneda as Exports
 
 -- contravariant
 -------------------------

@@ -206,9 +206,21 @@ library
     Rebase.Data.Monoid
     Rebase.Data.Ord
     Rebase.Data.Profunctor
+    Rebase.Data.Profunctor.Adjunction
+    Rebase.Data.Profunctor.Cayley
     Rebase.Data.Profunctor.Choice
+    Rebase.Data.Profunctor.Closed
+    Rebase.Data.Profunctor.Composition
+    Rebase.Data.Profunctor.Mapping
+    Rebase.Data.Profunctor.Monad
+    Rebase.Data.Profunctor.Ran
+    Rebase.Data.Profunctor.Rep
+    Rebase.Data.Profunctor.Sieve
     Rebase.Data.Profunctor.Strong
+    Rebase.Data.Profunctor.Traversing
+    Rebase.Data.Profunctor.Types
     Rebase.Data.Profunctor.Unsafe
+    Rebase.Data.Profunctor.Yoneda
     Rebase.Data.Proxy
     Rebase.Data.Ratio
     Rebase.Data.Scientific
@@ -418,7 +430,7 @@ library
     either >=5 && <5.1,
     hashable >=1.3 && <1.4,
     mtl >=2.2 && <2.3,
-    profunctors >=5.5 && <5.6,
+    profunctors >=5.5.2 && <5.6,
     scientific >=0.3 && <0.4,
     selective >=0.4 && <0.5,
     semigroupoids >=5.3 && <5.4,

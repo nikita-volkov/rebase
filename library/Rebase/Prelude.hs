@@ -69,6 +69,7 @@ import Rebase.GHC.Conc as Exports hiding (orElse, withMVar, threadWaitWriteSTM, 
 import Rebase.GHC.Exts as Exports (lazy, inline, sortWith, groupWith)
 import Rebase.GHC.Generics as Exports (Generic)
 import Rebase.GHC.IO.Exception as Exports
+import Rebase.GHC.Records as Exports
 import Rebase.Numeric as Exports
 import Rebase.Numeric.Natural as Exports
 import Rebase.System.Environment as Exports

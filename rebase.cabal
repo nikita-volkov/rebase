@@ -379,6 +379,7 @@ library
     Rebase.GHC.Ptr
     Rebase.GHC.Read
     Rebase.GHC.Real
+    Rebase.GHC.Records
     Rebase.GHC.Show
     Rebase.GHC.ST
     Rebase.GHC.Stable

@@ -374,6 +374,7 @@ library
     Rebase.GHC.List
     Rebase.GHC.MVar
     Rebase.GHC.Num
+    Rebase.GHC.OverloadedLabels
     Rebase.GHC.Pack
     Rebase.GHC.Profiling
     Rebase.GHC.Ptr

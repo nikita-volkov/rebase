@@ -224,6 +224,10 @@ import Rebase.Data.Void.Unsafe as Exports
 import Rebase.Data.Time as Exports
 import Rebase.Data.Time.Clock.POSIX as Exports
 
+-- hashable-time
+-------------------------
+import Rebase.Data.Hashable.Time as Exports ()
+
 -- stm
 -------------------------
 import Rebase.Control.Concurrent.STM as Exports hiding (orElse)

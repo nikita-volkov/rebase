@@ -184,6 +184,7 @@ library
     Rebase.Data.Graph
     Rebase.Data.Groupoid
     Rebase.Data.Hashable
+    Rebase.Data.Hashable.Time
     Rebase.Data.HashMap.Lazy
     Rebase.Data.HashMap.Strict
     Rebase.Data.HashSet
@@ -431,6 +432,7 @@ library
     dlist >=1 && <2,
     either >=5 && <5.1,
     hashable >=1.3 && <1.4,
+    hashable-time >=0.2.0.2 && <0.3,
     mtl >=2.2 && <2.3,
     profunctors >=5.5.2 && <5.6,
     scientific >=0.3 && <0.4,

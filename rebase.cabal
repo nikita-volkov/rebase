@@ -288,8 +288,8 @@ library
     Rebase.Data.Vector.Generic.Base
     Rebase.Data.Vector.Generic.Mutable
     Rebase.Data.Vector.Generic.New
-    Rebase.Data.Vector.Internal.Check
     Rebase.Data.Vector.Instances
+    Rebase.Data.Vector.Internal.Check
     Rebase.Data.Vector.Mutable
     Rebase.Data.Vector.Primitive
     Rebase.Data.Vector.Primitive.Mutable

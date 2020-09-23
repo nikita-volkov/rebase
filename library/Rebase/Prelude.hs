@@ -193,6 +193,10 @@ import Rebase.Data.HashMap.Strict as Exports (HashMap)
 -------------------------
 import Rebase.Data.Vector as Exports (Vector)
 
+-- vector-instances
+-------------------------
+import Rebase.Data.Vector.Instances as Exports ()
+
 -- bytestring
 -------------------------
 import Rebase.Data.ByteString as Exports (ByteString)

@@ -34,7 +34,7 @@ import Rebase.Data.Data as Exports
 import Rebase.Data.Dynamic as Exports
 import Rebase.Data.Either as Exports
 import Rebase.Data.Fixed as Exports
-import Rebase.Data.Foldable as Exports
+import Rebase.Data.Foldable as Exports hiding (toList)
 import Rebase.Data.Function as Exports hiding (id, (.))
 import Rebase.Data.Functor as Exports
 import Rebase.Data.Functor.Classes as Exports
@@ -66,7 +66,7 @@ import Rebase.Foreign.Ptr as Exports
 import Rebase.Foreign.StablePtr as Exports
 import Rebase.Foreign.Storable as Exports
 import Rebase.GHC.Conc as Exports hiding (orElse, withMVar, threadWaitWriteSTM, threadWaitWrite, threadWaitReadSTM, threadWaitRead)
-import Rebase.GHC.Exts as Exports (lazy, inline, sortWith, groupWith)
+import Rebase.GHC.Exts as Exports (lazy, inline, sortWith, groupWith, IsList(..))
 import Rebase.GHC.Generics as Exports (Generic)
 import Rebase.GHC.IO.Exception as Exports
 import Rebase.GHC.OverloadedLabels as Exports

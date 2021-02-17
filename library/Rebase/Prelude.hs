@@ -227,6 +227,7 @@ import Rebase.Data.Void.Unsafe as Exports
 -------------------------
 import Rebase.Data.Time as Exports
 import Rebase.Data.Time.Clock.POSIX as Exports
+import Rebase.Data.Time.Clock.System as Exports
 
 -- hashable-time
 -------------------------

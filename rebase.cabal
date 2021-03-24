@@ -38,7 +38,6 @@ library
   default-extensions: NoImplicitPrelude, NoMonomorphismRestriction
   default-language: Haskell2010
   exposed-modules:
-    Rebase.Contravariant.Extras
     Rebase.Control.Applicative
     Rebase.Control.Applicative.Backwards
     Rebase.Control.Applicative.Lift
@@ -428,7 +427,6 @@ library
     bytestring >=0.10 && <0.12,
     containers >=0.6 && <0.7,
     contravariant >=1.5 && <1.6,
-    contravariant-extras >=0.3 && <0.4,
     comonad >=5 && <5.1,
     deepseq >=1.4 && <1.5,
     dlist >=1 && <1.1,

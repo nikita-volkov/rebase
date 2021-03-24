@@ -111,10 +111,6 @@ import Rebase.Data.Profunctor.Yoneda as Exports
 import Rebase.Data.Functor.Contravariant as Exports
 import Rebase.Data.Functor.Contravariant.Divisible as Exports
 
--- contravariant-extras
--------------------------
-import Rebase.Contravariant.Extras as Exports
-
 -- semigroups
 -------------------------
 import Rebase.Data.List.NonEmpty as Exports (NonEmpty)

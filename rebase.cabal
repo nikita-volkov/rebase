@@ -140,9 +140,6 @@ library
     Rebase.Data.ByteString.Char8
     Rebase.Data.ByteString.Internal
     Rebase.Data.ByteString.Lazy
-    Rebase.Data.ByteString.Lazy.Builder
-    Rebase.Data.ByteString.Lazy.Builder.ASCII
-    Rebase.Data.ByteString.Lazy.Builder.Extras
     Rebase.Data.ByteString.Lazy.Char8
     Rebase.Data.ByteString.Lazy.Internal
     Rebase.Data.ByteString.Short

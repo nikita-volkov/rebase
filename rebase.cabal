@@ -150,7 +150,6 @@ library
     Rebase.Data.Complex
     Rebase.Data.Data
     Rebase.Data.DList
-    Rebase.Data.DList.DNonEmpty
     Rebase.Data.Dynamic
     Rebase.Data.Either
     Rebase.Data.Either.Combinators

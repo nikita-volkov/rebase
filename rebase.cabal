@@ -1,5 +1,5 @@
 name: rebase
-version: 1.13
+version: 1.13.0.1
 synopsis: A more progressive alternative to the "base" package
 description:
   This package is intended for those who are tired of keeping

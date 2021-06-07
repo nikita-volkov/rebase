@@ -1,7 +1,7 @@
 module Rebase.Data.UUID
 (
-  module Data.UUID
+  module Data.UUID.Types
 )
 where
 
-import Data.UUID
+import Data.UUID.Types

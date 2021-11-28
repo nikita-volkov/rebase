@@ -118,6 +118,7 @@ import Rebase.Data.List.NonEmpty as Exports (NonEmpty)
 -- semigroupoids
 -------------------------
 import Rebase.Data.Bifunctor.Apply as Exports
+import Rebase.Data.Groupoid as Exports
 import Rebase.Data.Functor.Alt as Exports hiding (($>), many, some, optional)
 import Rebase.Data.Functor.Apply as Exports hiding (($>))
 import Rebase.Data.Functor.Bind as Exports hiding (join, ($>))

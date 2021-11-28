@@ -238,6 +238,10 @@ import Rebase.Control.Concurrent.STM as Exports hiding (orElse)
 -------------------------
 import Rebase.Data.Functor.Invariant as Exports
 
+-- groups
+-------------------------
+import Rebase.Data.Group as Exports
+
 -- custom
 -------------------------
 import Rebase.Data.List1 as Exports (List1)

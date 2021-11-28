@@ -172,6 +172,8 @@ library
     Rebase.Data.Functor.Contravariant.Divisible
     Rebase.Data.Functor.Extend
     Rebase.Data.Functor.Identity
+    Rebase.Data.Functor.Invariant
+    Rebase.Data.Functor.Invariant.TH
     Rebase.Data.Functor.Plus
     Rebase.Data.Functor.Product
     Rebase.Data.Functor.Reverse
@@ -429,6 +431,7 @@ library
     either >=5 && <5.1,
     hashable >=1.3 && <1.5,
     hashable-time >=0.2.0.2 && <0.4,
+    invariant >=0.5.5 && <0.6,
     mtl >=2.2 && <2.3,
     profunctors >=5.6 && <5.7,
     scientific >=0.3 && <0.4,

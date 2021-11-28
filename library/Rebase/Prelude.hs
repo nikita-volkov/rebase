@@ -233,6 +233,10 @@ import Rebase.Data.Hashable.Time as Exports ()
 -------------------------
 import Rebase.Control.Concurrent.STM as Exports hiding (orElse)
 
+-- invariant
+-------------------------
+import Rebase.Data.Functor.Invariant as Exports
+
 -- custom
 -------------------------
 import Rebase.Data.List1 as Exports (List1)

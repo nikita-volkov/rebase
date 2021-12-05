@@ -437,7 +437,7 @@ library
     mtl >=2.2 && <2.3,
     profunctors >=5.6 && <5.7,
     scientific >=0.3 && <0.4,
-    selective >=0.4 && <0.5,
+    selective >=0.5 && <0.6,
     semigroupoids >=5.3 && <5.4,
     stm >=2.5 && <2.6,
     text >=1.2 && <1.3,

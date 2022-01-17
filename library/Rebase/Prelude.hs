@@ -226,9 +226,9 @@ import Rebase.Data.Time as Exports
 import Rebase.Data.Time.Clock.POSIX as Exports
 import Rebase.Data.Time.Clock.System as Exports
 
--- hashable-time
+-- time-compat
 -------------------------
-import Rebase.Data.Hashable.Time as Exports ()
+import Rebase.Data.Time.Compat as Exports ()
 
 -- stm
 -------------------------

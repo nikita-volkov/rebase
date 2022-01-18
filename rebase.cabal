@@ -1,5 +1,5 @@
 name: rebase
-version: 1.15.0.2
+version: 1.15.0.3
 synopsis: A more progressive alternative to the "base" package
 description:
   This package is intended for those who are tired of keeping
@@ -22,7 +22,7 @@ description:
   .
   If you don\'t need the \"Rebase\" namespace and want to import modules
   from the reexported packages as they are check out
-  <https://hackage.haskell.org/package/rerebase the "rerebase" package>
+  the \"<https://hackage.haskell.org/package/rerebase rerebase>\" package
   which simply reexports the original symbols in the original namespace.
   Thus it simply lets you depend on all the de-facto default packages,
   by yourself having to maintain only the dependency on \"rerebase\".

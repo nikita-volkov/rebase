@@ -1,5 +1,5 @@
 name: rebase
-version: 1.15
+version: 1.15.0.1
 synopsis: A more progressive alternative to the "base" package
 description:
   This package is intended for those who are tired of keeping
@@ -19,6 +19,14 @@ description:
   and non-controversial APIs, which the community has obviously settled on.
   The package is intended to rapidly evolve with the contribution from the community,
   with the missing features being added with pull-requests.
+  .
+  If you don\'t need the \"Rebase\" namespace and want to import modules
+  from the reexported packages as they are check out
+  <https://hackage.haskell.org/package/rerebase the \"rerebase\" package>
+  which simply reexports the original symbols in the original namespace.
+  Thus it simply lets you depend on all the de-facto default packages,
+  by yourself having to maintain only the dependency on \"rerebase\".
+  Also it comes packed with a prelude as rich as here.
 homepage: https://github.com/nikita-volkov/rebase
 bug-reports: https://github.com/nikita-volkov/rebase/issues
 author: Nikita Volkov <nikita.y.volkov@mail.ru>

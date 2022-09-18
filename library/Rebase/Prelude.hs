@@ -225,6 +225,7 @@ import Rebase.Data.Void.Unsafe as Exports
 import Rebase.Data.Time as Exports
 import Rebase.Data.Time.Clock.POSIX as Exports
 import Rebase.Data.Time.Clock.System as Exports
+import Rebase.Data.Time.Format.ISO8601 as Exports (ISO8601 (..), iso8601ParseM, iso8601Show)
 
 -- time-compat
 -------------------------

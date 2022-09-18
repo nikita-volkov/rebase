@@ -277,6 +277,7 @@ library
     Rebase.Data.Time.Clock.TAI
     Rebase.Data.Time.Compat
     Rebase.Data.Time.Format
+    Rebase.Data.Time.Format.ISO8601
     Rebase.Data.Time.LocalTime
     Rebase.Data.Traversable
     Rebase.Data.Traversable.Instances

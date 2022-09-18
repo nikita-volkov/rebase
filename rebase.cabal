@@ -76,7 +76,6 @@ library
     Rebase.Control.Monad.Fix
     Rebase.Control.Monad.Identity
     Rebase.Control.Monad.IO.Class
-    Rebase.Control.Monad.List
     Rebase.Control.Monad.Reader
     Rebase.Control.Monad.Reader.Class
     Rebase.Control.Monad.RWS

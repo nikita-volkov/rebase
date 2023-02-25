@@ -100,7 +100,6 @@ library
     Rebase.Control.Monad.Trans.Cont
     Rebase.Control.Monad.Trans.Except
     Rebase.Control.Monad.Trans.Identity
-    Rebase.Control.Monad.Trans.List
     Rebase.Control.Monad.Trans.Maybe
     Rebase.Control.Monad.Trans.Reader
     Rebase.Control.Monad.Trans.RWS

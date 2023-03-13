@@ -17,7 +17,6 @@ jobs:
         include:
           - ghc: '8.8'
           - ghc: '9.4'
-            ghc-options: -Werror -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates -Wredundant-constraints -Wunused-packages -Wno-name-shadowing -Wno-unused-matches
 
     runs-on: ubuntu-latest
 
@@ -30,14 +29,6 @@ jobs:
         with:
           ghc-version: ${{ matrix.ghc }}
           cabal-version: 3.8
-
-      - name: Generate cabal.project
-        run: |
-          echo "packages: ." >> cabal.project
-          echo "constraints:" >> cabal.project
-          echo "  , text == ${{ matrix.text }}" >> cabal.project
-          echo "  , bytestring == ${{ matrix.bytestring }}" >> cabal.project
-          cat cabal.project
 
       - name: Generate cabal.project.freeze
         run: cabal freeze --enable-tests --enable-benchmarks

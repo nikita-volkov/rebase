@@ -1,3 +1,5 @@
+{-# LANGUAGE CPP #-}
+
 -- |
 -- This module reexports the non-conflicting definitions from
 -- the modules exported by this package,
@@ -36,7 +38,11 @@ import Rebase.Data.Either as Exports
 import Rebase.Data.Fixed as Exports
 import Rebase.Data.Foldable as Exports hiding (toList)
 import Rebase.Data.Function as Exports hiding (id, (.))
+#if MIN_VERSION_base(4,19,0)
+import Rebase.Data.Functor as Exports hiding (unzip)
+#else
 import Rebase.Data.Functor as Exports
+#endif
 import Rebase.Data.Functor.Classes as Exports
 import Rebase.Data.Functor.Compose as Exports
 import Rebase.Data.Functor.Contravariant as Exports

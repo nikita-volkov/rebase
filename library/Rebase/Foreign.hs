@@ -1,7 +1,6 @@
 module Rebase.Foreign
-(
-  module Foreign
-)
+  ( module Foreign,
+  )
 where
 
 import Foreign

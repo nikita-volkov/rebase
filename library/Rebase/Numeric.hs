@@ -1,7 +1,6 @@
 module Rebase.Numeric
-(
-  module Numeric
-)
+  ( module Numeric,
+  )
 where
 
 import Numeric

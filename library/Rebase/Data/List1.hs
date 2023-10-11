@@ -2,10 +2,9 @@
 -- This module simply provides a more meaningful name
 -- to "Data.List.NonEmpty".
 module Rebase.Data.List1
-(
-  module Data.List.NonEmpty,
-  List1,
-)
+  ( module Data.List.NonEmpty,
+    List1,
+  )
 where
 
 import Data.List.NonEmpty

@@ -1,8 +1,7 @@
 module Rebase.Data.List
-(
-  module Data.List,
-  List,
-)
+  ( module Data.List,
+    List,
+  )
 where
 
 import Data.List

@@ -1,8 +1,7 @@
 module Rebase.Data.Semigroup
-(
-  module Data.Semigroup,
-  sappend,
-)
+  ( module Data.Semigroup,
+    sappend,
+  )
 where
 
 import Data.Semigroup

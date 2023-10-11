@@ -1,6 +1,7 @@
-name: rebase
-version: 1.20.1
-synopsis: A more progressive alternative to the "base" package
+cabal-version: 3.0
+name:          rebase
+version:       1.20.1
+synopsis:      A more progressive alternative to the "base" package
 description:
   This package is intended for those who are tired of keeping
   long lists of dependencies to the same essential libraries in each package
@@ -27,24 +28,26 @@ description:
   Thus it simply lets you depend on all the de-facto default packages,
   by yourself having to maintain only the dependency on \"rerebase\".
   Also it comes packed with a prelude as rich as here.
-homepage: https://github.com/nikita-volkov/rebase
-bug-reports: https://github.com/nikita-volkov/rebase/issues
-author: Nikita Volkov <nikita.y.volkov@mail.ru>
-maintainer: Nikita Volkov <nikita.y.volkov@mail.ru>
-copyright: (c) 2016, Nikita Volkov
-license: MIT
-license-file: LICENSE
-build-type: Simple
-cabal-version: >=1.10
+
+homepage:      https://github.com/nikita-volkov/rebase
+bug-reports:   https://github.com/nikita-volkov/rebase/issues
+author:        Nikita Volkov <nikita.y.volkov@mail.ru>
+maintainer:    Nikita Volkov <nikita.y.volkov@mail.ru>
+copyright:     (c) 2016, Nikita Volkov
+license:       MIT
+license-file:  LICENSE
 
 source-repository head
-  type: git
+  type:     git
   location: git://github.com/nikita-volkov/rebase.git
 
 library
-  hs-source-dirs: library
-  default-extensions: NoImplicitPrelude, NoMonomorphismRestriction
-  default-language: Haskell2010
+  hs-source-dirs:     library
+  default-extensions:
+    NoImplicitPrelude
+    NoMonomorphismRestriction
+
+  default-language:   Haskell2010
   exposed-modules:
     Rebase.Control.Applicative
     Rebase.Control.Applicative.Backwards
@@ -427,31 +430,32 @@ library
     Rebase.Text.Show
     Rebase.Text.Show.Functions
     Rebase.Unsafe.Coerce
+
   build-depends:
-    base >=4.13 && <5,
-    bifunctors >=5.6 && <5.7,
-    bytestring >=0.10 && <0.12,
-    containers >=0.6 && <0.7,
-    contravariant >=1.5 && <1.6,
-    comonad >=5 && <5.1,
-    deepseq >=1.4 && <1.5,
-    dlist >=0.8 && <1.1,
-    either >=5 && <5.1,
-    groups >=0.5.3 && <0.6,
-    hashable >=1.3 && <1.5,
-    invariant >=0.5.5 && <0.7,
-    mtl >=2.2 && <2.4,
-    profunctors >=5.6 && <5.7,
-    scientific >=0.3 && <0.4,
-    selective >=0.7 && <0.8,
-    semigroupoids >=6 && <7,
-    stm >=2.5 && <2.6,
-    text >=1.2 && <1.3 || >=2.0 && <2.1,
-    time >=1.9 && <1.13,
-    time-compat >=1.9.6.1 && <1.10,
-    transformers >=0.5 && <0.7,
-    unordered-containers >=0.2.13 && <0.3,
-    uuid-types >=1.0 && <1.1,
-    vector >=0.12 && <0.14,
-    vector-instances >=3.4 && <3.5,
-    void >=0.7 && <0.8
+    , base >=4.13 && <5
+    , bifunctors >=5.6 && <5.7
+    , bytestring >=0.10 && <0.12
+    , comonad >=5 && <5.1
+    , containers >=0.6 && <0.7
+    , contravariant >=1.5 && <1.6
+    , deepseq >=1.4 && <1.6
+    , dlist >=0.8 && <1.1
+    , either >=5 && <5.1
+    , groups >=0.5.3 && <0.6
+    , hashable >=1.3 && <1.5
+    , invariant >=0.5.5 && <0.7
+    , mtl >=2.2 && <2.4
+    , profunctors >=5.6 && <5.7
+    , scientific >=0.3 && <0.4
+    , selective >=0.7 && <0.8
+    , semigroupoids >=6 && <7
+    , stm >=2.5 && <2.6
+    , text >=1.2 && <1.3 || >=2.0 && <2.2
+    , time >=1.9 && <1.13
+    , time-compat >=1.9.6.1 && <1.10
+    , transformers >=0.5 && <0.7
+    , unordered-containers >=0.2.13 && <0.3
+    , uuid-types >=1.0 && <1.1
+    , vector >=0.12 && <0.14
+    , vector-instances >=3.4 && <3.5
+    , void >=0.7 && <0.8

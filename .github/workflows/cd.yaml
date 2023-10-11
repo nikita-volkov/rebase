@@ -26,10 +26,9 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Release
-        uses: nikita-volkov/release-haskell-package.github-action@v1.0.0
+        uses: nikita-volkov/release-haskell-package.github-action@v1.2.0
         with:
           hackage-token: ${{ secrets.HACKAGE_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           version-bump-place: ${{ fromJSON('{"supermajor":0,"major":1,"minor":2,"patch":3}')[github.ref_name] }}
           main-branch: master
           prefix-tag-with-v: false

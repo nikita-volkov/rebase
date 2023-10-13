@@ -434,7 +434,7 @@ library
   build-depends:
     , base >=4.13 && <5
     , bifunctors >=5.6 && <5.7
-    , bytestring >=0.10 && <0.12
+    , bytestring >=0.10 && <0.13
     , comonad >=5 && <5.1
     , containers >=0.6 && <0.7
     , contravariant >=1.5 && <1.6

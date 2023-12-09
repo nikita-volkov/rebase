@@ -11,9 +11,6 @@ module Rebase.Prelude
   )
 where
 
--- base
--------------------------
-
 import Rebase.Control.Applicative as Exports
 import Rebase.Control.Arrow as Exports hiding (first, second)
 import Rebase.Control.Category as Exports
@@ -42,80 +39,7 @@ import Rebase.Data.Functor as Exports hiding (unzip)
 #else
 import Rebase.Data.Functor as Exports
 #endif
--- profunctors
--------------------------
-
--- contravariant
--------------------------
-
--- semigroups
--------------------------
-
--- semigroupoids
--------------------------
-
--- comonad
--------------------------
 import Rebase.Control.Comonad as Exports
--- deepseq
--------------------------
-
--- selective
--------------------------
-
--- transformers
--------------------------
-
--- mtl
--------------------------
-
--- either
--------------------------
-
--- fail
--------------------------
-
--- hashable
--------------------------
-
--- containers
--------------------------
-
--- unordered-containers
--------------------------
-
--- vector
--------------------------
-
--- vector-instances
--------------------------
-
--- bytestring
--------------------------
-
--- text
--------------------------
-
--- scientific
--------------------------
-
--- uuid
--------------------------
-
--- dlist
--------------------------
-
--- void
--------------------------
-
--- time
--------------------------
-
--- time-compat
--------------------------
-
--- stm
--------------------------
 import Rebase.Control.Concurrent.STM as Exports hiding (orElse)
 import Rebase.Control.DeepSeq as Exports
 import Rebase.Control.Monad.Cont.Class as Exports
@@ -147,12 +71,8 @@ import Rebase.Data.Functor.Contravariant as Exports
 import Rebase.Data.Functor.Contravariant.Divisible as Exports
 import Rebase.Data.Functor.Extend as Exports
 import Rebase.Data.Functor.Identity as Exports
--- invariant
--------------------------
 import Rebase.Data.Functor.Invariant as Exports
 import Rebase.Data.Functor.Plus as Exports hiding (many, optional, some, ($>))
--- groups
--------------------------
 import Rebase.Data.Group as Exports
 import Rebase.Data.Groupoid as Exports
 import Rebase.Data.HashMap.Strict as Exports (HashMap)
@@ -165,8 +85,6 @@ import Rebase.Data.IntSet as Exports (IntSet)
 import Rebase.Data.Ix as Exports
 import Rebase.Data.List as Exports hiding (all, and, any, concat, concatMap, elem, find, foldl, foldl', foldl1, foldr, foldr1, mapAccumL, mapAccumR, maximum, maximumBy, minimum, minimumBy, notElem, or, product, sum)
 import Rebase.Data.List.NonEmpty as Exports (NonEmpty (..))
--- custom
--------------------------
 import Rebase.Data.List1 as Exports (List1)
 import Rebase.Data.Map.Strict as Exports (Map)
 import Rebase.Data.Maybe as Exports

@@ -1,6 +1,6 @@
 cabal-version: 3.0
 name:          rebase
-version:       1.20.1.1
+version:       1.20.2
 synopsis:      A more progressive alternative to the "base" package
 description:
   This package is intended for those who are tired of keeping
@@ -436,7 +436,7 @@ library
     , bifunctors >=5.6 && <5.7
     , bytestring >=0.10 && <0.13
     , comonad >=5 && <5.1
-    , containers >=0.6 && <0.7
+    , containers >=0.6 && <0.8
     , contravariant >=1.5 && <1.6
     , deepseq >=1.4 && <1.6
     , dlist >=0.8 && <1.1

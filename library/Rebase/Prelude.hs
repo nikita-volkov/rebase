@@ -43,9 +43,7 @@ import Rebase.Control.Comonad as Exports
 import Rebase.Control.Concurrent.STM as Exports hiding (orElse)
 import Rebase.Control.DeepSeq as Exports
 import Rebase.Control.Monad.Cont.Class as Exports
-import Rebase.Control.Monad.Error.Class as Exports hiding (Error (..))
-import Rebase.Control.Monad.Fail as Exports
-import Rebase.Control.Monad.IO.Class as Exports
+import Rebase.Control.Monad.Error.Class as Exports
 import Rebase.Control.Monad.Reader.Class as Exports
 import Rebase.Control.Monad.State.Class as Exports
 import Rebase.Control.Monad.Trans.Class as Exports
@@ -63,7 +61,6 @@ import Rebase.Data.ByteString.Short as Exports (ShortByteString)
 import Rebase.Data.DList as Exports (DList)
 import Rebase.Data.Either.Combinators as Exports hiding (fromLeft, fromRight, isLeft, isRight, mapLeft, mapRight)
 import Rebase.Data.Functor.Alt as Exports hiding (many, optional, some, ($>))
-import Rebase.Data.Functor.Apply as Exports hiding (($>))
 import Rebase.Data.Functor.Bind as Exports hiding (join, ($>))
 import Rebase.Data.Functor.Classes as Exports
 import Rebase.Data.Functor.Compose as Exports
@@ -85,7 +82,6 @@ import Rebase.Data.IntSet as Exports (IntSet)
 import Rebase.Data.Ix as Exports
 import Rebase.Data.List as Exports hiding (all, and, any, concat, concatMap, elem, find, foldl, foldl', foldl1, foldr, foldr1, mapAccumL, mapAccumR, maximum, maximumBy, minimum, minimumBy, notElem, or, product, sum)
 import Rebase.Data.List.NonEmpty as Exports (NonEmpty (..))
-import Rebase.Data.List1 as Exports (List1)
 import Rebase.Data.Map.Strict as Exports (Map)
 import Rebase.Data.Maybe as Exports
 import Rebase.Data.Monoid as Exports hiding (Alt, First (..), Last (..), (<>))
@@ -103,7 +99,6 @@ import Rebase.Data.Profunctor.Rep as Exports
 import Rebase.Data.Profunctor.Sieve as Exports
 import Rebase.Data.Profunctor.Strong as Exports
 import Rebase.Data.Profunctor.Traversing as Exports
-import Rebase.Data.Profunctor.Types as Exports hiding (WrappedArrow (..))
 import Rebase.Data.Profunctor.Unsafe as Exports
 import Rebase.Data.Profunctor.Yoneda as Exports
 import Rebase.Data.Proxy as Exports
@@ -156,7 +151,6 @@ import Rebase.System.IO.Unsafe as Exports
 import Rebase.System.Mem as Exports
 import Rebase.System.Mem.StableName as Exports
 import Rebase.System.Timeout as Exports
-import Rebase.Text.ParserCombinators.ReadP as Exports (ReadP, ReadS, readP_to_S, readS_to_P)
 import Rebase.Text.ParserCombinators.ReadPrec as Exports (ReadPrec, readP_to_Prec, readPrec_to_P, readPrec_to_S, readS_to_Prec)
 import Rebase.Text.Printf as Exports (hPrintf, printf)
 import Rebase.Text.Read as Exports (Read (..), readEither, readMaybe)

@@ -1,6 +1,6 @@
 cabal-version: 3.0
 name:          rebase
-version:       1.20.2
+version:       1.21
 synopsis:      A more progressive alternative to the "base" package
 description:
   This package is intended for those who are tired of keeping
@@ -88,9 +88,7 @@ library
     Rebase.Control.Monad.Signatures
     Rebase.Control.Monad.ST
     Rebase.Control.Monad.ST.Lazy
-    Rebase.Control.Monad.ST.Lazy.Safe
     Rebase.Control.Monad.ST.Lazy.Unsafe
-    Rebase.Control.Monad.ST.Safe
     Rebase.Control.Monad.ST.Strict
     Rebase.Control.Monad.ST.Unsafe
     Rebase.Control.Monad.State
@@ -205,7 +203,6 @@ library
     Rebase.Data.Kind
     Rebase.Data.List
     Rebase.Data.List.NonEmpty
-    Rebase.Data.List1
     Rebase.Data.Map
     Rebase.Data.Map.Lazy
     Rebase.Data.Map.Strict
@@ -235,7 +232,6 @@ library
     Rebase.Data.Semigroup.Bifoldable
     Rebase.Data.Semigroup.Bitraversable
     Rebase.Data.Semigroup.Foldable
-    Rebase.Data.Semigroup.Foldable.Class
     Rebase.Data.Semigroup.Traversable
     Rebase.Data.Semigroup.Traversable.Class
     Rebase.Data.Semigroupoid
@@ -320,7 +316,6 @@ library
     Rebase.Foreign.C.Types
     Rebase.Foreign.Concurrent
     Rebase.Foreign.ForeignPtr
-    Rebase.Foreign.ForeignPtr.Safe
     Rebase.Foreign.ForeignPtr.Unsafe
     Rebase.Foreign.Marshal
     Rebase.Foreign.Marshal.Alloc
@@ -331,7 +326,6 @@ library
     Rebase.Foreign.Marshal.Unsafe
     Rebase.Foreign.Marshal.Utils
     Rebase.Foreign.Ptr
-    Rebase.Foreign.Safe
     Rebase.Foreign.StablePtr
     Rebase.Foreign.Storable
     Rebase.GHC.Arr
@@ -341,8 +335,6 @@ library
     Rebase.GHC.Conc.IO
     Rebase.GHC.Conc.Signal
     Rebase.GHC.Conc.Sync
-    Rebase.GHC.ConsoleHandler
-    Rebase.GHC.Constants
     Rebase.GHC.Desugar
     Rebase.GHC.Enum
     Rebase.GHC.Environment
@@ -357,14 +349,12 @@ library
     Rebase.GHC.Foreign
     Rebase.GHC.ForeignPtr
     Rebase.GHC.Generics
-    Rebase.GHC.GHCi
     Rebase.GHC.Int
     Rebase.GHC.IO
     Rebase.GHC.IO.Buffer
     Rebase.GHC.IO.BufferedIO
     Rebase.GHC.IO.Device
     Rebase.GHC.IO.Encoding
-    Rebase.GHC.IO.Encoding.CodePage
     Rebase.GHC.IO.Encoding.Failure
     Rebase.GHC.IO.Encoding.Iconv
     Rebase.GHC.IO.Encoding.Latin1
@@ -386,7 +376,6 @@ library
     Rebase.GHC.MVar
     Rebase.GHC.Num
     Rebase.GHC.OverloadedLabels
-    Rebase.GHC.Pack
     Rebase.GHC.Profiling
     Rebase.GHC.Ptr
     Rebase.GHC.Read
@@ -428,7 +417,6 @@ library
     Rebase.Text.Read
     Rebase.Text.Read.Lex
     Rebase.Text.Show
-    Rebase.Text.Show.Functions
     Rebase.Unsafe.Coerce
 
   build-depends:

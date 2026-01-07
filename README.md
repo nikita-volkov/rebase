@@ -17,3 +17,13 @@ The policy behind the package is only to reexport the non-ambiguous
 and non-controversial APIs, which the community has obviously settled on.
 The package is intended to rapidly evolve with the contribution from the community,
 with the missing features being added with pull-requests.
+
+# Versioning Policy
+
+- In version `*.X.*.*`, X gets incremented when major version of a dependency changes.
+
+- In version `*.*.X.*`, X gets incremented when minor version of a dependency changes or a dependency is added.
+
+- In version `X.*.*.*`, X gets incremented when the policy changes.
+
+- In version `*.*.*.X`, X gets incremented when there are other changes like minor changes in the reexports or documentation.

@@ -22,7 +22,7 @@ with the missing features being added with pull-requests.
 
 - In version `X.*.*.*`, X gets incremented when the policy changes.
 
-- In version `*.X.*.*`, X gets incremented when major version of a dependency changes or a module reexport gets removed.
+- In version `*.X.*.*`, X gets incremented when lower bound of a dependency gets raised or a module reexport gets removed.
 
 - In version `*.*.X.*`, X gets incremented when minor version of a dependency changes or a dependency is added.
 

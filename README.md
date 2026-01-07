@@ -20,10 +20,10 @@ with the missing features being added with pull-requests.
 
 # Versioning Policy
 
-- In version `*.X.*.*`, X gets incremented when major version of a dependency changes.
+- In version `X.*.*.*`, X gets incremented when the policy changes.
+
+- In version `*.X.*.*`, X gets incremented when major version of a dependency changes or a module reexport gets removed.
 
 - In version `*.*.X.*`, X gets incremented when minor version of a dependency changes or a dependency is added.
-
-- In version `X.*.*.*`, X gets incremented when the policy changes.
 
 - In version `*.*.*.X`, X gets incremented when there are other changes like minor changes in the reexports or documentation.

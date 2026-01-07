@@ -335,7 +335,6 @@ library
     Rebase.GHC.Conc.IO
     Rebase.GHC.Conc.Signal
     Rebase.GHC.Conc.Sync
-    Rebase.GHC.Desugar
     Rebase.GHC.Enum
     Rebase.GHC.Environment
     Rebase.GHC.Err

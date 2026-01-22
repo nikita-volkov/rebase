@@ -53,6 +53,7 @@ library
     Rebase.Data.Text
     Rebase.Data.Text.Lazy
     Rebase.Prelude
+
   reexported-modules:
     Control.Applicative as Rebase.Control.Applicative,
     Control.Applicative.Backwards as Rebase.Control.Applicative.Backwards,
@@ -287,7 +288,6 @@ library
     Data.Type.Equality as Rebase.Data.Type.Equality,
     Data.Typeable as Rebase.Data.Typeable,
     Data.Unique as Rebase.Data.Unique,
-    -- note rename
     Data.UUID.Types as Rebase.Data.UUID,
     Data.Vector as Rebase.Data.Vector,
     Data.Vector.Fusion.Stream.Monadic as Rebase.Data.Vector.Fusion.Stream.Monadic,
@@ -420,6 +420,7 @@ library
     Text.Show as Rebase.Text.Show,
     Unsafe.Coerce as Rebase.Unsafe.Coerce,
 
+  -- note rename
   build-depends:
     , base >=4.13 && <5
     , bifunctors >=5.6 && <5.7

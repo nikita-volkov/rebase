@@ -21,7 +21,6 @@ import Control.Monad.Fail as Exports
 import Control.Monad.Fix as Exports hiding (fix)
 import Control.Monad.IO.Class as Exports
 import Control.Monad.ST as Exports
-import Rebase.Data.Bifunctor as Exports
 import Data.Bits as Exports
 import Data.Bool as Exports
 import Data.Char as Exports
@@ -33,6 +32,7 @@ import Data.Either as Exports
 import Data.Fixed as Exports
 import Data.Foldable as Exports hiding (toList)
 import Data.Function as Exports hiding (id, (.))
+import Rebase.Data.Bifunctor as Exports
 import Prelude as Exports hiding (all, and, any, concat, concatMap, elem, fail, foldl, foldl1, foldr, foldr1, id, mapM, mapM_, maximum, minimum, notElem, or, product, sequence, sequence_, sum, (.))
 #if MIN_VERSION_base(4,19,0)
 import Data.Functor as Exports hiding (unzip)
@@ -114,7 +114,6 @@ import Data.Semigroupoid as Exports
 import Data.Sequence as Exports (Seq)
 import Data.Set as Exports (Set)
 import Data.String as Exports
-import Rebase.Data.Text as Exports (Text)
 import Data.Time as Exports
 import Data.Time.Clock.POSIX as Exports
 import Data.Time.Clock.System as Exports
@@ -143,6 +142,7 @@ import GHC.OverloadedLabels as Exports
 import GHC.Records as Exports
 import Numeric as Exports
 import Numeric.Natural as Exports
+import Rebase.Data.Text as Exports (Text)
 import System.Environment as Exports
 import System.Exit as Exports
 import System.IO as Exports (Handle, hClose)

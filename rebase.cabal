@@ -49,374 +49,376 @@ library
 
   default-language:   Haskell2010
   exposed-modules:
-    Rebase.Control.Applicative
-    Rebase.Control.Applicative.Backwards
-    Rebase.Control.Applicative.Lift
-    Rebase.Control.Arrow
-    Rebase.Control.Category
-    Rebase.Control.Comonad
-    Rebase.Control.Concurrent
-    Rebase.Control.Concurrent.Chan
-    Rebase.Control.Concurrent.MVar
-    Rebase.Control.Concurrent.QSem
-    Rebase.Control.Concurrent.QSemN
-    Rebase.Control.Concurrent.STM
-    Rebase.Control.Concurrent.STM.TArray
-    Rebase.Control.Concurrent.STM.TBQueue
-    Rebase.Control.Concurrent.STM.TChan
-    Rebase.Control.Concurrent.STM.TMVar
-    Rebase.Control.Concurrent.STM.TQueue
-    Rebase.Control.Concurrent.STM.TSem
-    Rebase.Control.Concurrent.STM.TVar
-    Rebase.Control.DeepSeq
-    Rebase.Control.Exception
-    Rebase.Control.Exception.Base
-    Rebase.Control.Monad
-    Rebase.Control.Monad.Cont
-    Rebase.Control.Monad.Cont.Class
-    Rebase.Control.Monad.Error.Class
-    Rebase.Control.Monad.Fail
-    Rebase.Control.Monad.Fix
-    Rebase.Control.Monad.Identity
-    Rebase.Control.Monad.IO.Class
-    Rebase.Control.Monad.Reader
-    Rebase.Control.Monad.Reader.Class
-    Rebase.Control.Monad.RWS
-    Rebase.Control.Monad.RWS.Class
-    Rebase.Control.Monad.RWS.Lazy
-    Rebase.Control.Monad.RWS.Strict
-    Rebase.Control.Monad.Signatures
-    Rebase.Control.Monad.ST
-    Rebase.Control.Monad.ST.Lazy
-    Rebase.Control.Monad.ST.Lazy.Unsafe
-    Rebase.Control.Monad.ST.Strict
-    Rebase.Control.Monad.ST.Unsafe
-    Rebase.Control.Monad.State
-    Rebase.Control.Monad.State.Class
-    Rebase.Control.Monad.State.Lazy
-    Rebase.Control.Monad.State.Strict
-    Rebase.Control.Monad.STM
-    Rebase.Control.Monad.Trans
-    Rebase.Control.Monad.Trans.Class
-    Rebase.Control.Monad.Trans.Cont
-    Rebase.Control.Monad.Trans.Except
-    Rebase.Control.Monad.Trans.Identity
-    Rebase.Control.Monad.Trans.Maybe
-    Rebase.Control.Monad.Trans.Reader
-    Rebase.Control.Monad.Trans.RWS
-    Rebase.Control.Monad.Trans.RWS.Lazy
-    Rebase.Control.Monad.Trans.RWS.Strict
-    Rebase.Control.Monad.Trans.State
-    Rebase.Control.Monad.Trans.State.Lazy
-    Rebase.Control.Monad.Trans.State.Strict
-    Rebase.Control.Monad.Trans.Writer
-    Rebase.Control.Monad.Trans.Writer.Lazy
-    Rebase.Control.Monad.Trans.Writer.Strict
-    Rebase.Control.Monad.Writer
-    Rebase.Control.Monad.Writer.Class
-    Rebase.Control.Monad.Writer.Lazy
-    Rebase.Control.Monad.Writer.Strict
-    Rebase.Control.Monad.Zip
-    Rebase.Control.Selective
-    Rebase.Control.Selective.Free
-    Rebase.Control.Selective.Multi
-    Rebase.Control.Selective.Rigid.Free
-    Rebase.Control.Selective.Rigid.Freer
-    Rebase.Data.Biapplicative
-    Rebase.Data.Bifoldable
     Rebase.Data.Bifunctor
-    Rebase.Data.Bifunctor.Apply
-    Rebase.Data.Bifunctor.Biff
-    Rebase.Data.Bifunctor.Clown
-    Rebase.Data.Bifunctor.Flip
-    Rebase.Data.Bifunctor.Join
-    Rebase.Data.Bifunctor.Joker
-    Rebase.Data.Bifunctor.Product
-    Rebase.Data.Bifunctor.Tannen
-    Rebase.Data.Bifunctor.Wrapped
-    Rebase.Data.Bitraversable
-    Rebase.Data.Bits
-    Rebase.Data.Bool
-    Rebase.Data.ByteString
-    Rebase.Data.ByteString.Builder
-    Rebase.Data.ByteString.Builder.Extra
-    Rebase.Data.ByteString.Builder.Internal
-    Rebase.Data.ByteString.Builder.Prim
-    Rebase.Data.ByteString.Builder.Prim.Internal
-    Rebase.Data.ByteString.Builder.Scientific
-    Rebase.Data.ByteString.Char8
-    Rebase.Data.ByteString.Internal
-    Rebase.Data.ByteString.Lazy
-    Rebase.Data.ByteString.Lazy.Char8
-    Rebase.Data.ByteString.Lazy.Internal
-    Rebase.Data.ByteString.Short
-    Rebase.Data.ByteString.Short.Internal
-    Rebase.Data.ByteString.Unsafe
-    Rebase.Data.Char
-    Rebase.Data.Coerce
-    Rebase.Data.Complex
-    Rebase.Data.Data
-    Rebase.Data.DList
-    Rebase.Data.Dynamic
-    Rebase.Data.Either
-    Rebase.Data.Either.Combinators
-    Rebase.Data.Either.Validation
-    Rebase.Data.Eq
-    Rebase.Data.Fixed
-    Rebase.Data.Foldable
-    Rebase.Data.Function
-    Rebase.Data.Functor
-    Rebase.Data.Functor.Alt
-    Rebase.Data.Functor.Apply
-    Rebase.Data.Functor.Bind
-    Rebase.Data.Functor.Bind.Class
-    Rebase.Data.Functor.Bind.Trans
-    Rebase.Data.Functor.Classes
-    Rebase.Data.Functor.Compose
-    Rebase.Data.Functor.Constant
-    Rebase.Data.Functor.Contravariant
-    Rebase.Data.Functor.Contravariant.Compose
-    Rebase.Data.Functor.Contravariant.Divisible
-    Rebase.Data.Functor.Extend
-    Rebase.Data.Functor.Identity
-    Rebase.Data.Functor.Invariant
-    Rebase.Data.Functor.Invariant.TH
-    Rebase.Data.Functor.Plus
-    Rebase.Data.Functor.Product
-    Rebase.Data.Functor.Reverse
-    Rebase.Data.Functor.Sum
-    Rebase.Data.Graph
-    Rebase.Data.Group
-    Rebase.Data.Groupoid
-    Rebase.Data.Hashable
-    Rebase.Data.HashMap.Lazy
-    Rebase.Data.HashMap.Strict
-    Rebase.Data.HashSet
-    Rebase.Data.Int
-    Rebase.Data.IntMap
-    Rebase.Data.IntMap.Lazy
-    Rebase.Data.IntMap.Strict
-    Rebase.Data.IntSet
-    Rebase.Data.IORef
-    Rebase.Data.Isomorphism
-    Rebase.Data.Ix
-    Rebase.Data.Kind
-    Rebase.Data.List
-    Rebase.Data.List.NonEmpty
-    Rebase.Data.Map
-    Rebase.Data.Map.Lazy
-    Rebase.Data.Map.Strict
-    Rebase.Data.Maybe
-    Rebase.Data.Monoid
-    Rebase.Data.Ord
-    Rebase.Data.Profunctor
-    Rebase.Data.Profunctor.Adjunction
-    Rebase.Data.Profunctor.Cayley
-    Rebase.Data.Profunctor.Choice
-    Rebase.Data.Profunctor.Closed
-    Rebase.Data.Profunctor.Composition
-    Rebase.Data.Profunctor.Mapping
-    Rebase.Data.Profunctor.Monad
-    Rebase.Data.Profunctor.Ran
-    Rebase.Data.Profunctor.Rep
-    Rebase.Data.Profunctor.Sieve
-    Rebase.Data.Profunctor.Strong
-    Rebase.Data.Profunctor.Traversing
-    Rebase.Data.Profunctor.Types
-    Rebase.Data.Profunctor.Unsafe
-    Rebase.Data.Profunctor.Yoneda
-    Rebase.Data.Proxy
-    Rebase.Data.Ratio
-    Rebase.Data.Scientific
-    Rebase.Data.Semigroup
-    Rebase.Data.Semigroup.Bifoldable
-    Rebase.Data.Semigroup.Bitraversable
-    Rebase.Data.Semigroup.Foldable
-    Rebase.Data.Semigroup.Traversable
-    Rebase.Data.Semigroup.Traversable.Class
-    Rebase.Data.Semigroupoid
-    Rebase.Data.Semigroupoid.Dual
-    Rebase.Data.Semigroupoid.Ob
-    Rebase.Data.Semigroupoid.Static
-    Rebase.Data.Sequence
-    Rebase.Data.Set
-    Rebase.Data.STRef
-    Rebase.Data.STRef.Lazy
-    Rebase.Data.STRef.Strict
-    Rebase.Data.String
     Rebase.Data.Text
-    Rebase.Data.Text.Array
-    Rebase.Data.Text.Encoding
-    Rebase.Data.Text.Encoding.Error
-    Rebase.Data.Text.Foreign
-    Rebase.Data.Text.Internal
-    Rebase.Data.Text.IO
     Rebase.Data.Text.Lazy
-    Rebase.Data.Text.Lazy.Builder
-    Rebase.Data.Text.Lazy.Builder.Int
-    Rebase.Data.Text.Lazy.Builder.RealFloat
-    Rebase.Data.Text.Lazy.Builder.Scientific
-    Rebase.Data.Text.Lazy.Encoding
-    Rebase.Data.Text.Lazy.IO
-    Rebase.Data.Text.Lazy.Read
-    Rebase.Data.Text.Read
-    Rebase.Data.Text.Unsafe
-    Rebase.Data.Time
-    Rebase.Data.Time.Calendar
-    Rebase.Data.Time.Calendar.Easter
-    Rebase.Data.Time.Calendar.Julian
-    Rebase.Data.Time.Calendar.MonthDay
-    Rebase.Data.Time.Calendar.OrdinalDate
-    Rebase.Data.Time.Calendar.WeekDate
-    Rebase.Data.Time.Clock
-    Rebase.Data.Time.Clock.POSIX
-    Rebase.Data.Time.Clock.System
-    Rebase.Data.Time.Clock.TAI
-    Rebase.Data.Time.Compat
-    Rebase.Data.Time.Format
-    Rebase.Data.Time.Format.ISO8601
-    Rebase.Data.Time.LocalTime
-    Rebase.Data.Traversable
-    Rebase.Data.Traversable.Instances
-    Rebase.Data.Tree
-    Rebase.Data.Tuple
-    Rebase.Data.Type.Bool
-    Rebase.Data.Type.Coercion
-    Rebase.Data.Type.Equality
-    Rebase.Data.Typeable
-    Rebase.Data.Unique
-    Rebase.Data.UUID
-    Rebase.Data.Vector
-    Rebase.Data.Vector.Fusion.Stream.Monadic
-    Rebase.Data.Vector.Fusion.Util
-    Rebase.Data.Vector.Generic
-    Rebase.Data.Vector.Generic.Base
-    Rebase.Data.Vector.Generic.Mutable
-    Rebase.Data.Vector.Generic.New
-    Rebase.Data.Vector.Instances
-    Rebase.Data.Vector.Internal.Check
-    Rebase.Data.Vector.Mutable
-    Rebase.Data.Vector.Primitive
-    Rebase.Data.Vector.Primitive.Mutable
-    Rebase.Data.Vector.Storable
-    Rebase.Data.Vector.Storable.Internal
-    Rebase.Data.Vector.Storable.Mutable
-    Rebase.Data.Vector.Unboxed
-    Rebase.Data.Vector.Unboxed.Base
-    Rebase.Data.Vector.Unboxed.Mutable
-    Rebase.Data.Version
-    Rebase.Data.Void
-    Rebase.Data.Void.Unsafe
-    Rebase.Data.Word
-    Rebase.Debug.Trace
-    Rebase.Foreign
-    Rebase.Foreign.C
-    Rebase.Foreign.C.Error
-    Rebase.Foreign.C.String
-    Rebase.Foreign.C.Types
-    Rebase.Foreign.Concurrent
-    Rebase.Foreign.ForeignPtr
-    Rebase.Foreign.ForeignPtr.Unsafe
-    Rebase.Foreign.Marshal
-    Rebase.Foreign.Marshal.Alloc
-    Rebase.Foreign.Marshal.Array
-    Rebase.Foreign.Marshal.Error
-    Rebase.Foreign.Marshal.Pool
-    Rebase.Foreign.Marshal.Safe
-    Rebase.Foreign.Marshal.Unsafe
-    Rebase.Foreign.Marshal.Utils
-    Rebase.Foreign.Ptr
-    Rebase.Foreign.StablePtr
-    Rebase.Foreign.Storable
-    Rebase.GHC.Arr
-    Rebase.GHC.Base
-    Rebase.GHC.Char
-    Rebase.GHC.Conc
-    Rebase.GHC.Conc.IO
-    Rebase.GHC.Conc.Signal
-    Rebase.GHC.Conc.Sync
-    Rebase.GHC.Enum
-    Rebase.GHC.Environment
-    Rebase.GHC.Err
-    Rebase.GHC.Exception
-    Rebase.GHC.Exts
-    Rebase.GHC.Fingerprint
-    Rebase.GHC.Fingerprint.Type
-    Rebase.GHC.Float
-    Rebase.GHC.Float.ConversionUtils
-    Rebase.GHC.Float.RealFracMethods
-    Rebase.GHC.Foreign
-    Rebase.GHC.ForeignPtr
-    Rebase.GHC.Generics
-    Rebase.GHC.Int
-    Rebase.GHC.IO
-    Rebase.GHC.IO.Buffer
-    Rebase.GHC.IO.BufferedIO
-    Rebase.GHC.IO.Device
-    Rebase.GHC.IO.Encoding
-    Rebase.GHC.IO.Encoding.Failure
-    Rebase.GHC.IO.Encoding.Iconv
-    Rebase.GHC.IO.Encoding.Latin1
-    Rebase.GHC.IO.Encoding.Types
-    Rebase.GHC.IO.Encoding.UTF16
-    Rebase.GHC.IO.Encoding.UTF32
-    Rebase.GHC.IO.Encoding.UTF8
-    Rebase.GHC.IO.Exception
-    Rebase.GHC.IO.FD
-    Rebase.GHC.IO.Handle
-    Rebase.GHC.IO.Handle.FD
-    Rebase.GHC.IO.Handle.Internals
-    Rebase.GHC.IO.Handle.Text
-    Rebase.GHC.IO.Handle.Types
-    Rebase.GHC.IO.IOMode
-    Rebase.GHC.IOArray
-    Rebase.GHC.IORef
-    Rebase.GHC.List
-    Rebase.GHC.MVar
-    Rebase.GHC.Num
-    Rebase.GHC.OverloadedLabels
-    Rebase.GHC.Profiling
-    Rebase.GHC.Ptr
-    Rebase.GHC.Read
-    Rebase.GHC.Real
-    Rebase.GHC.Records
-    Rebase.GHC.Show
-    Rebase.GHC.ST
-    Rebase.GHC.Stable
-    Rebase.GHC.Stack
-    Rebase.GHC.Stats
-    Rebase.GHC.Storable
-    Rebase.GHC.STRef
-    Rebase.GHC.TopHandler
-    Rebase.GHC.TypeLits
-    Rebase.GHC.TypeNats
-    Rebase.GHC.Unicode
-    Rebase.GHC.Weak
-    Rebase.GHC.Word
-    Rebase.Numeric
-    Rebase.Numeric.Natural
     Rebase.Prelude
-    Rebase.System.Console.GetOpt
-    Rebase.System.CPUTime
-    Rebase.System.Environment
-    Rebase.System.Exit
-    Rebase.System.Info
-    Rebase.System.IO
-    Rebase.System.IO.Error
-    Rebase.System.IO.Unsafe
-    Rebase.System.Mem
-    Rebase.System.Mem.StableName
-    Rebase.System.Mem.Weak
-    Rebase.System.Posix.Internals
-    Rebase.System.Posix.Types
-    Rebase.System.Timeout
-    Rebase.Text.ParserCombinators.ReadP
-    Rebase.Text.ParserCombinators.ReadPrec
-    Rebase.Text.Printf
-    Rebase.Text.Read
-    Rebase.Text.Read.Lex
-    Rebase.Text.Show
-    Rebase.Unsafe.Coerce
+  reexported-modules:
+    Control.Applicative as Rebase.Control.Applicative,
+    Control.Applicative.Backwards as Rebase.Control.Applicative.Backwards,
+    Control.Applicative.Lift as Rebase.Control.Applicative.Lift,
+    Control.Arrow as Rebase.Control.Arrow,
+    Control.Category as Rebase.Control.Category,
+    Control.Comonad as Rebase.Control.Comonad,
+    Control.Concurrent as Rebase.Control.Concurrent,
+    Control.Concurrent.Chan as Rebase.Control.Concurrent.Chan,
+    Control.Concurrent.MVar as Rebase.Control.Concurrent.MVar,
+    Control.Concurrent.QSem as Rebase.Control.Concurrent.QSem,
+    Control.Concurrent.QSemN as Rebase.Control.Concurrent.QSemN,
+    Control.Concurrent.STM as Rebase.Control.Concurrent.STM,
+    Control.Concurrent.STM.TArray as Rebase.Control.Concurrent.STM.TArray,
+    Control.Concurrent.STM.TBQueue as Rebase.Control.Concurrent.STM.TBQueue,
+    Control.Concurrent.STM.TChan as Rebase.Control.Concurrent.STM.TChan,
+    Control.Concurrent.STM.TMVar as Rebase.Control.Concurrent.STM.TMVar,
+    Control.Concurrent.STM.TQueue as Rebase.Control.Concurrent.STM.TQueue,
+    Control.Concurrent.STM.TSem as Rebase.Control.Concurrent.STM.TSem,
+    Control.Concurrent.STM.TVar as Rebase.Control.Concurrent.STM.TVar,
+    Control.DeepSeq as Rebase.Control.DeepSeq,
+    Control.Exception as Rebase.Control.Exception,
+    Control.Exception.Base as Rebase.Control.Exception.Base,
+    Control.Monad as Rebase.Control.Monad,
+    Control.Monad.Cont as Rebase.Control.Monad.Cont,
+    Control.Monad.Cont.Class as Rebase.Control.Monad.Cont.Class,
+    Control.Monad.Error.Class as Rebase.Control.Monad.Error.Class,
+    Control.Monad.Fail as Rebase.Control.Monad.Fail,
+    Control.Monad.Fix as Rebase.Control.Monad.Fix,
+    Control.Monad.Identity as Rebase.Control.Monad.Identity,
+    Control.Monad.IO.Class as Rebase.Control.Monad.IO.Class,
+    Control.Monad.Reader as Rebase.Control.Monad.Reader,
+    Control.Monad.Reader.Class as Rebase.Control.Monad.Reader.Class,
+    Control.Monad.RWS as Rebase.Control.Monad.RWS,
+    Control.Monad.RWS.Class as Rebase.Control.Monad.RWS.Class,
+    Control.Monad.RWS.Lazy as Rebase.Control.Monad.RWS.Lazy,
+    Control.Monad.RWS.Strict as Rebase.Control.Monad.RWS.Strict,
+    Control.Monad.Signatures as Rebase.Control.Monad.Signatures,
+    Control.Monad.ST as Rebase.Control.Monad.ST,
+    Control.Monad.ST.Lazy as Rebase.Control.Monad.ST.Lazy,
+    Control.Monad.ST.Lazy.Unsafe as Rebase.Control.Monad.ST.Lazy.Unsafe,
+    Control.Monad.ST.Strict as Rebase.Control.Monad.ST.Strict,
+    Control.Monad.ST.Unsafe as Rebase.Control.Monad.ST.Unsafe,
+    Control.Monad.State as Rebase.Control.Monad.State,
+    Control.Monad.State.Class as Rebase.Control.Monad.State.Class,
+    Control.Monad.State.Lazy as Rebase.Control.Monad.State.Lazy,
+    Control.Monad.State.Strict as Rebase.Control.Monad.State.Strict,
+    Control.Monad.STM as Rebase.Control.Monad.STM,
+    Control.Monad.Trans as Rebase.Control.Monad.Trans,
+    Control.Monad.Trans.Class as Rebase.Control.Monad.Trans.Class,
+    Control.Monad.Trans.Cont as Rebase.Control.Monad.Trans.Cont,
+    Control.Monad.Trans.Except as Rebase.Control.Monad.Trans.Except,
+    Control.Monad.Trans.Identity as Rebase.Control.Monad.Trans.Identity,
+    Control.Monad.Trans.Maybe as Rebase.Control.Monad.Trans.Maybe,
+    Control.Monad.Trans.Reader as Rebase.Control.Monad.Trans.Reader,
+    Control.Monad.Trans.RWS as Rebase.Control.Monad.Trans.RWS,
+    Control.Monad.Trans.RWS.Lazy as Rebase.Control.Monad.Trans.RWS.Lazy,
+    Control.Monad.Trans.RWS.Strict as Rebase.Control.Monad.Trans.RWS.Strict,
+    Control.Monad.Trans.State as Rebase.Control.Monad.Trans.State,
+    Control.Monad.Trans.State.Lazy as Rebase.Control.Monad.Trans.State.Lazy,
+    Control.Monad.Trans.State.Strict as Rebase.Control.Monad.Trans.State.Strict,
+    Control.Monad.Trans.Writer as Rebase.Control.Monad.Trans.Writer,
+    Control.Monad.Trans.Writer.Lazy as Rebase.Control.Monad.Trans.Writer.Lazy,
+    Control.Monad.Trans.Writer.Strict as Rebase.Control.Monad.Trans.Writer.Strict,
+    Control.Monad.Writer as Rebase.Control.Monad.Writer,
+    Control.Monad.Writer.Class as Rebase.Control.Monad.Writer.Class,
+    Control.Monad.Writer.Lazy as Rebase.Control.Monad.Writer.Lazy,
+    Control.Monad.Writer.Strict as Rebase.Control.Monad.Writer.Strict,
+    Control.Monad.Zip as Rebase.Control.Monad.Zip,
+    Control.Selective as Rebase.Control.Selective,
+    Control.Selective.Free as Rebase.Control.Selective.Free,
+    Control.Selective.Multi as Rebase.Control.Selective.Multi,
+    Control.Selective.Rigid.Free as Rebase.Control.Selective.Rigid.Free,
+    Control.Selective.Rigid.Freer as Rebase.Control.Selective.Rigid.Freer,
+    Data.Biapplicative as Rebase.Data.Biapplicative,
+    Data.Bifoldable as Rebase.Data.Bifoldable,
+    Data.Bifunctor.Apply as Rebase.Data.Bifunctor.Apply,
+    Data.Bifunctor.Biff as Rebase.Data.Bifunctor.Biff,
+    Data.Bifunctor.Clown as Rebase.Data.Bifunctor.Clown,
+    Data.Bifunctor.Flip as Rebase.Data.Bifunctor.Flip,
+    Data.Bifunctor.Join as Rebase.Data.Bifunctor.Join,
+    Data.Bifunctor.Joker as Rebase.Data.Bifunctor.Joker,
+    Data.Bifunctor.Product as Rebase.Data.Bifunctor.Product,
+    Data.Bifunctor.Tannen as Rebase.Data.Bifunctor.Tannen,
+    Data.Bifunctor.Wrapped as Rebase.Data.Bifunctor.Wrapped,
+    Data.Bitraversable as Rebase.Data.Bitraversable,
+    Data.Bits as Rebase.Data.Bits,
+    Data.Bool as Rebase.Data.Bool,
+    Data.ByteString as Rebase.Data.ByteString,
+    Data.ByteString.Builder as Rebase.Data.ByteString.Builder,
+    Data.ByteString.Builder.Extra as Rebase.Data.ByteString.Builder.Extra,
+    Data.ByteString.Builder.Internal as Rebase.Data.ByteString.Builder.Internal,
+    Data.ByteString.Builder.Prim as Rebase.Data.ByteString.Builder.Prim,
+    Data.ByteString.Builder.Prim.Internal as Rebase.Data.ByteString.Builder.Prim.Internal,
+    Data.ByteString.Builder.Scientific as Rebase.Data.ByteString.Builder.Scientific,
+    Data.ByteString.Char8 as Rebase.Data.ByteString.Char8,
+    Data.ByteString.Internal as Rebase.Data.ByteString.Internal,
+    Data.ByteString.Lazy as Rebase.Data.ByteString.Lazy,
+    Data.ByteString.Lazy.Char8 as Rebase.Data.ByteString.Lazy.Char8,
+    Data.ByteString.Lazy.Internal as Rebase.Data.ByteString.Lazy.Internal,
+    Data.ByteString.Short as Rebase.Data.ByteString.Short,
+    Data.ByteString.Short.Internal as Rebase.Data.ByteString.Short.Internal,
+    Data.ByteString.Unsafe as Rebase.Data.ByteString.Unsafe,
+    Data.Char as Rebase.Data.Char,
+    Data.Coerce as Rebase.Data.Coerce,
+    Data.Complex as Rebase.Data.Complex,
+    Data.Data as Rebase.Data.Data,
+    Data.DList as Rebase.Data.DList,
+    Data.Dynamic as Rebase.Data.Dynamic,
+    Data.Either as Rebase.Data.Either,
+    Data.Either.Combinators as Rebase.Data.Either.Combinators,
+    Data.Either.Validation as Rebase.Data.Either.Validation,
+    Data.Eq as Rebase.Data.Eq,
+    Data.Fixed as Rebase.Data.Fixed,
+    Data.Foldable as Rebase.Data.Foldable,
+    Data.Function as Rebase.Data.Function,
+    Data.Functor as Rebase.Data.Functor,
+    Data.Functor.Alt as Rebase.Data.Functor.Alt,
+    Data.Functor.Apply as Rebase.Data.Functor.Apply,
+    Data.Functor.Bind as Rebase.Data.Functor.Bind,
+    Data.Functor.Bind.Class as Rebase.Data.Functor.Bind.Class,
+    Data.Functor.Bind.Trans as Rebase.Data.Functor.Bind.Trans,
+    Data.Functor.Classes as Rebase.Data.Functor.Classes,
+    Data.Functor.Compose as Rebase.Data.Functor.Compose,
+    Data.Functor.Constant as Rebase.Data.Functor.Constant,
+    Data.Functor.Contravariant as Rebase.Data.Functor.Contravariant,
+    Data.Functor.Contravariant.Compose as Rebase.Data.Functor.Contravariant.Compose,
+    Data.Functor.Contravariant.Divisible as Rebase.Data.Functor.Contravariant.Divisible,
+    Data.Functor.Extend as Rebase.Data.Functor.Extend,
+    Data.Functor.Identity as Rebase.Data.Functor.Identity,
+    Data.Functor.Invariant as Rebase.Data.Functor.Invariant,
+    Data.Functor.Invariant.TH as Rebase.Data.Functor.Invariant.TH,
+    Data.Functor.Plus as Rebase.Data.Functor.Plus,
+    Data.Functor.Product as Rebase.Data.Functor.Product,
+    Data.Functor.Reverse as Rebase.Data.Functor.Reverse,
+    Data.Functor.Sum as Rebase.Data.Functor.Sum,
+    Data.Graph as Rebase.Data.Graph,
+    Data.Group as Rebase.Data.Group,
+    Data.Groupoid as Rebase.Data.Groupoid,
+    Data.Hashable as Rebase.Data.Hashable,
+    Data.HashMap.Lazy as Rebase.Data.HashMap.Lazy,
+    Data.HashMap.Strict as Rebase.Data.HashMap.Strict,
+    Data.HashSet as Rebase.Data.HashSet,
+    Data.Int as Rebase.Data.Int,
+    Data.IntMap as Rebase.Data.IntMap,
+    Data.IntMap.Lazy as Rebase.Data.IntMap.Lazy,
+    Data.IntMap.Strict as Rebase.Data.IntMap.Strict,
+    Data.IntSet as Rebase.Data.IntSet,
+    Data.IORef as Rebase.Data.IORef,
+    Data.Isomorphism as Rebase.Data.Isomorphism,
+    Data.Ix as Rebase.Data.Ix,
+    Data.Kind as Rebase.Data.Kind,
+    Data.List as Rebase.Data.List,
+    Data.List.NonEmpty as Rebase.Data.List.NonEmpty,
+    Data.Map as Rebase.Data.Map,
+    Data.Map.Lazy as Rebase.Data.Map.Lazy,
+    Data.Map.Strict as Rebase.Data.Map.Strict,
+    Data.Maybe as Rebase.Data.Maybe,
+    Data.Monoid as Rebase.Data.Monoid,
+    Data.Ord as Rebase.Data.Ord,
+    Data.Profunctor as Rebase.Data.Profunctor,
+    Data.Profunctor.Adjunction as Rebase.Data.Profunctor.Adjunction,
+    Data.Profunctor.Cayley as Rebase.Data.Profunctor.Cayley,
+    Data.Profunctor.Choice as Rebase.Data.Profunctor.Choice,
+    Data.Profunctor.Closed as Rebase.Data.Profunctor.Closed,
+    Data.Profunctor.Composition as Rebase.Data.Profunctor.Composition,
+    Data.Profunctor.Mapping as Rebase.Data.Profunctor.Mapping,
+    Data.Profunctor.Monad as Rebase.Data.Profunctor.Monad,
+    Data.Profunctor.Ran as Rebase.Data.Profunctor.Ran,
+    Data.Profunctor.Rep as Rebase.Data.Profunctor.Rep,
+    Data.Profunctor.Sieve as Rebase.Data.Profunctor.Sieve,
+    Data.Profunctor.Strong as Rebase.Data.Profunctor.Strong,
+    Data.Profunctor.Traversing as Rebase.Data.Profunctor.Traversing,
+    Data.Profunctor.Types as Rebase.Data.Profunctor.Types,
+    Data.Profunctor.Unsafe as Rebase.Data.Profunctor.Unsafe,
+    Data.Profunctor.Yoneda as Rebase.Data.Profunctor.Yoneda,
+    Data.Proxy as Rebase.Data.Proxy,
+    Data.Ratio as Rebase.Data.Ratio,
+    Data.Scientific as Rebase.Data.Scientific,
+    Data.Semigroup as Rebase.Data.Semigroup,
+    Data.Semigroup.Bifoldable as Rebase.Data.Semigroup.Bifoldable,
+    Data.Semigroup.Bitraversable as Rebase.Data.Semigroup.Bitraversable,
+    Data.Semigroup.Foldable as Rebase.Data.Semigroup.Foldable,
+    Data.Semigroup.Traversable as Rebase.Data.Semigroup.Traversable,
+    Data.Semigroup.Traversable.Class as Rebase.Data.Semigroup.Traversable.Class,
+    Data.Semigroupoid as Rebase.Data.Semigroupoid,
+    Data.Semigroupoid.Dual as Rebase.Data.Semigroupoid.Dual,
+    Data.Semigroupoid.Ob as Rebase.Data.Semigroupoid.Ob,
+    Data.Semigroupoid.Static as Rebase.Data.Semigroupoid.Static,
+    Data.Sequence as Rebase.Data.Sequence,
+    Data.Set as Rebase.Data.Set,
+    Data.STRef as Rebase.Data.STRef,
+    Data.STRef.Lazy as Rebase.Data.STRef.Lazy,
+    Data.STRef.Strict as Rebase.Data.STRef.Strict,
+    Data.String as Rebase.Data.String,
+    Data.Text.Array as Rebase.Data.Text.Array,
+    Data.Text.Encoding as Rebase.Data.Text.Encoding,
+    Data.Text.Encoding.Error as Rebase.Data.Text.Encoding.Error,
+    Data.Text.Foreign as Rebase.Data.Text.Foreign,
+    Data.Text.Internal as Rebase.Data.Text.Internal,
+    Data.Text.IO as Rebase.Data.Text.IO,
+    Data.Text.Lazy.Builder as Rebase.Data.Text.Lazy.Builder,
+    Data.Text.Lazy.Builder.Int as Rebase.Data.Text.Lazy.Builder.Int,
+    Data.Text.Lazy.Builder.RealFloat as Rebase.Data.Text.Lazy.Builder.RealFloat,
+    Data.Text.Lazy.Builder.Scientific as Rebase.Data.Text.Lazy.Builder.Scientific,
+    Data.Text.Lazy.Encoding as Rebase.Data.Text.Lazy.Encoding,
+    Data.Text.Lazy.IO as Rebase.Data.Text.Lazy.IO,
+    Data.Text.Lazy.Read as Rebase.Data.Text.Lazy.Read,
+    Data.Text.Read as Rebase.Data.Text.Read,
+    Data.Text.Unsafe as Rebase.Data.Text.Unsafe,
+    Data.Time as Rebase.Data.Time,
+    Data.Time.Calendar as Rebase.Data.Time.Calendar,
+    Data.Time.Calendar.Easter as Rebase.Data.Time.Calendar.Easter,
+    Data.Time.Calendar.Julian as Rebase.Data.Time.Calendar.Julian,
+    Data.Time.Calendar.MonthDay as Rebase.Data.Time.Calendar.MonthDay,
+    Data.Time.Calendar.OrdinalDate as Rebase.Data.Time.Calendar.OrdinalDate,
+    Data.Time.Calendar.WeekDate as Rebase.Data.Time.Calendar.WeekDate,
+    Data.Time.Clock as Rebase.Data.Time.Clock,
+    Data.Time.Clock.POSIX as Rebase.Data.Time.Clock.POSIX,
+    Data.Time.Clock.System as Rebase.Data.Time.Clock.System,
+    Data.Time.Clock.TAI as Rebase.Data.Time.Clock.TAI,
+    Data.Time.Compat as Rebase.Data.Time.Compat,
+    Data.Time.Format as Rebase.Data.Time.Format,
+    Data.Time.Format.ISO8601 as Rebase.Data.Time.Format.ISO8601,
+    Data.Time.LocalTime as Rebase.Data.Time.LocalTime,
+    Data.Traversable as Rebase.Data.Traversable,
+    Data.Traversable.Instances as Rebase.Data.Traversable.Instances,
+    Data.Tree as Rebase.Data.Tree,
+    Data.Tuple as Rebase.Data.Tuple,
+    Data.Type.Bool as Rebase.Data.Type.Bool,
+    Data.Type.Coercion as Rebase.Data.Type.Coercion,
+    Data.Type.Equality as Rebase.Data.Type.Equality,
+    Data.Typeable as Rebase.Data.Typeable,
+    Data.Unique as Rebase.Data.Unique,
+    -- note rename
+    Data.UUID.Types as Rebase.Data.UUID,
+    Data.Vector as Rebase.Data.Vector,
+    Data.Vector.Fusion.Stream.Monadic as Rebase.Data.Vector.Fusion.Stream.Monadic,
+    Data.Vector.Fusion.Util as Rebase.Data.Vector.Fusion.Util,
+    Data.Vector.Generic as Rebase.Data.Vector.Generic,
+    Data.Vector.Generic.Base as Rebase.Data.Vector.Generic.Base,
+    Data.Vector.Generic.Mutable as Rebase.Data.Vector.Generic.Mutable,
+    Data.Vector.Generic.New as Rebase.Data.Vector.Generic.New,
+    Data.Vector.Instances as Rebase.Data.Vector.Instances,
+    Data.Vector.Internal.Check as Rebase.Data.Vector.Internal.Check,
+    Data.Vector.Mutable as Rebase.Data.Vector.Mutable,
+    Data.Vector.Primitive as Rebase.Data.Vector.Primitive,
+    Data.Vector.Primitive.Mutable as Rebase.Data.Vector.Primitive.Mutable,
+    Data.Vector.Storable as Rebase.Data.Vector.Storable,
+    Data.Vector.Storable.Internal as Rebase.Data.Vector.Storable.Internal,
+    Data.Vector.Storable.Mutable as Rebase.Data.Vector.Storable.Mutable,
+    Data.Vector.Unboxed as Rebase.Data.Vector.Unboxed,
+    Data.Vector.Unboxed.Base as Rebase.Data.Vector.Unboxed.Base,
+    Data.Vector.Unboxed.Mutable as Rebase.Data.Vector.Unboxed.Mutable,
+    Data.Version as Rebase.Data.Version,
+    Data.Void as Rebase.Data.Void,
+    Data.Void.Unsafe as Rebase.Data.Void.Unsafe,
+    Data.Word as Rebase.Data.Word,
+    Debug.Trace as Rebase.Debug.Trace,
+    Foreign as Rebase.Foreign,
+    Foreign.C as Rebase.Foreign.C,
+    Foreign.C.Error as Rebase.Foreign.C.Error,
+    Foreign.C.String as Rebase.Foreign.C.String,
+    Foreign.C.Types as Rebase.Foreign.C.Types,
+    Foreign.Concurrent as Rebase.Foreign.Concurrent,
+    Foreign.ForeignPtr as Rebase.Foreign.ForeignPtr,
+    Foreign.ForeignPtr.Unsafe as Rebase.Foreign.ForeignPtr.Unsafe,
+    Foreign.Marshal as Rebase.Foreign.Marshal,
+    Foreign.Marshal.Alloc as Rebase.Foreign.Marshal.Alloc,
+    Foreign.Marshal.Array as Rebase.Foreign.Marshal.Array,
+    Foreign.Marshal.Error as Rebase.Foreign.Marshal.Error,
+    Foreign.Marshal.Pool as Rebase.Foreign.Marshal.Pool,
+    Foreign.Marshal.Safe as Rebase.Foreign.Marshal.Safe,
+    Foreign.Marshal.Unsafe as Rebase.Foreign.Marshal.Unsafe,
+    Foreign.Marshal.Utils as Rebase.Foreign.Marshal.Utils,
+    Foreign.Ptr as Rebase.Foreign.Ptr,
+    Foreign.StablePtr as Rebase.Foreign.StablePtr,
+    Foreign.Storable as Rebase.Foreign.Storable,
+    GHC.Arr as Rebase.GHC.Arr,
+    GHC.Base as Rebase.GHC.Base,
+    GHC.Char as Rebase.GHC.Char,
+    GHC.Conc as Rebase.GHC.Conc,
+    GHC.Conc.IO as Rebase.GHC.Conc.IO,
+    GHC.Conc.Signal as Rebase.GHC.Conc.Signal,
+    GHC.Conc.Sync as Rebase.GHC.Conc.Sync,
+    GHC.Enum as Rebase.GHC.Enum,
+    GHC.Environment as Rebase.GHC.Environment,
+    GHC.Err as Rebase.GHC.Err,
+    GHC.Exception as Rebase.GHC.Exception,
+    GHC.Exts as Rebase.GHC.Exts,
+    GHC.Fingerprint as Rebase.GHC.Fingerprint,
+    GHC.Fingerprint.Type as Rebase.GHC.Fingerprint.Type,
+    GHC.Float as Rebase.GHC.Float,
+    GHC.Float.ConversionUtils as Rebase.GHC.Float.ConversionUtils,
+    GHC.Float.RealFracMethods as Rebase.GHC.Float.RealFracMethods,
+    GHC.Foreign as Rebase.GHC.Foreign,
+    GHC.ForeignPtr as Rebase.GHC.ForeignPtr,
+    GHC.Generics as Rebase.GHC.Generics,
+    GHC.Int as Rebase.GHC.Int,
+    GHC.IO as Rebase.GHC.IO,
+    GHC.IO.Buffer as Rebase.GHC.IO.Buffer,
+    GHC.IO.BufferedIO as Rebase.GHC.IO.BufferedIO,
+    GHC.IO.Device as Rebase.GHC.IO.Device,
+    GHC.IO.Encoding as Rebase.GHC.IO.Encoding,
+    GHC.IO.Encoding.Failure as Rebase.GHC.IO.Encoding.Failure,
+    GHC.IO.Encoding.Iconv as Rebase.GHC.IO.Encoding.Iconv,
+    GHC.IO.Encoding.Latin1 as Rebase.GHC.IO.Encoding.Latin1,
+    GHC.IO.Encoding.Types as Rebase.GHC.IO.Encoding.Types,
+    GHC.IO.Encoding.UTF16 as Rebase.GHC.IO.Encoding.UTF16,
+    GHC.IO.Encoding.UTF32 as Rebase.GHC.IO.Encoding.UTF32,
+    GHC.IO.Encoding.UTF8 as Rebase.GHC.IO.Encoding.UTF8,
+    GHC.IO.Exception as Rebase.GHC.IO.Exception,
+    GHC.IO.FD as Rebase.GHC.IO.FD,
+    GHC.IO.Handle as Rebase.GHC.IO.Handle,
+    GHC.IO.Handle.FD as Rebase.GHC.IO.Handle.FD,
+    GHC.IO.Handle.Internals as Rebase.GHC.IO.Handle.Internals,
+    GHC.IO.Handle.Text as Rebase.GHC.IO.Handle.Text,
+    GHC.IO.Handle.Types as Rebase.GHC.IO.Handle.Types,
+    GHC.IO.IOMode as Rebase.GHC.IO.IOMode,
+    GHC.IOArray as Rebase.GHC.IOArray,
+    GHC.IORef as Rebase.GHC.IORef,
+    GHC.List as Rebase.GHC.List,
+    GHC.MVar as Rebase.GHC.MVar,
+    GHC.Num as Rebase.GHC.Num,
+    GHC.OverloadedLabels as Rebase.GHC.OverloadedLabels,
+    GHC.Profiling as Rebase.GHC.Profiling,
+    GHC.Ptr as Rebase.GHC.Ptr,
+    GHC.Read as Rebase.GHC.Read,
+    GHC.Real as Rebase.GHC.Real,
+    GHC.Records as Rebase.GHC.Records,
+    GHC.Show as Rebase.GHC.Show,
+    GHC.ST as Rebase.GHC.ST,
+    GHC.Stable as Rebase.GHC.Stable,
+    GHC.Stack as Rebase.GHC.Stack,
+    GHC.Stats as Rebase.GHC.Stats,
+    GHC.Storable as Rebase.GHC.Storable,
+    GHC.STRef as Rebase.GHC.STRef,
+    GHC.TopHandler as Rebase.GHC.TopHandler,
+    GHC.TypeLits as Rebase.GHC.TypeLits,
+    GHC.TypeNats as Rebase.GHC.TypeNats,
+    GHC.Unicode as Rebase.GHC.Unicode,
+    GHC.Weak as Rebase.GHC.Weak,
+    GHC.Word as Rebase.GHC.Word,
+    Numeric as Rebase.Numeric,
+    Numeric.Natural as Rebase.Numeric.Natural,
+    System.Console.GetOpt as Rebase.System.Console.GetOpt,
+    System.CPUTime as Rebase.System.CPUTime,
+    System.Environment as Rebase.System.Environment,
+    System.Exit as Rebase.System.Exit,
+    System.Info as Rebase.System.Info,
+    System.IO as Rebase.System.IO,
+    System.IO.Error as Rebase.System.IO.Error,
+    System.IO.Unsafe as Rebase.System.IO.Unsafe,
+    System.Mem as Rebase.System.Mem,
+    System.Mem.StableName as Rebase.System.Mem.StableName,
+    System.Mem.Weak as Rebase.System.Mem.Weak,
+    System.Posix.Internals as Rebase.System.Posix.Internals,
+    System.Posix.Types as Rebase.System.Posix.Types,
+    System.Timeout as Rebase.System.Timeout,
+    Text.ParserCombinators.ReadP as Rebase.Text.ParserCombinators.ReadP,
+    Text.ParserCombinators.ReadPrec as Rebase.Text.ParserCombinators.ReadPrec,
+    Text.Printf as Rebase.Text.Printf,
+    Text.Read as Rebase.Text.Read,
+    Text.Read.Lex as Rebase.Text.Read.Lex,
+    Text.Show as Rebase.Text.Show,
+    Unsafe.Coerce as Rebase.Unsafe.Coerce,
 
   build-depends:
     , base >=4.13 && <5

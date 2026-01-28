@@ -121,7 +121,7 @@ import Data.Time.Compat as Exports ()
 import Data.Time.Format.ISO8601 as Exports (ISO8601 (..), iso8601ParseM, iso8601Show)
 import Data.Traversable as Exports
 import Data.Tuple as Exports
-import Data.UUID.Types as Exports (UUID)
+import Data.UUID as Exports (UUID)
 import Data.Unique as Exports
 import Data.Vector as Exports (Vector)
 import Data.Vector.Instances as Exports ()

@@ -32,8 +32,9 @@ import Data.Either as Exports
 import Data.Fixed as Exports
 import Data.Foldable as Exports hiding (toList)
 import Data.Function as Exports hiding (id, (.))
-import Rebase.Data.Bifunctor as Exports
 import Prelude as Exports hiding (all, and, any, concat, concatMap, elem, fail, foldl, foldl1, foldr, foldr1, id, mapM, mapM_, maximum, minimum, notElem, or, product, sequence, sequence_, sum, (.))
+import Rebase.Data.Bifunctor as Exports
+import Rebase.Data.Text as Exports (Text)
 #if MIN_VERSION_base(4,19,0)
 import Data.Functor as Exports hiding (unzip)
 #else
@@ -142,7 +143,6 @@ import GHC.OverloadedLabels as Exports
 import GHC.Records as Exports
 import Numeric as Exports
 import Numeric.Natural as Exports
-import Rebase.Data.Text as Exports (Text)
 import System.Environment as Exports
 import System.Exit as Exports
 import System.IO as Exports (Handle, hClose)

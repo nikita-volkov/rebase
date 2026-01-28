@@ -1,0 +1,20 @@
+# Cabal build artifacts
+dist/
+dist-newstyle/
+cabal-dev/
+.cabal-sandbox/
+cabal.sandbox.config
+*.o
+*.hi
+*.dyn_o
+*.dyn_hi
+*.chi
+*.chs.h
+.virtualenv
+.hsenv
+.hpc
+*.prof
+*.aux
+*.hp
+*.eventlog
+*.tix
